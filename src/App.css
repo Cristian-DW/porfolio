@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=PT+Sans:wght@400;700&family=Roboto+Slab:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.font-nav{
+  @apply text-xl;
+}
+
+.button-hover{
+  @apply transition-transform  duration-500 transform hover:scale-90;
+}
+
+.title{
+  @apply text-5xl  mb-7 sm:text-5xl md:text-7xl text-center lg:text-left lg:text-[15rem];
+}
+.word{
+  @apply text-3xl mb-20 sm:text-2xl md:text-2xl lg:text-3xl xl:text-5xl  ;
+}
+
+.subtitle{
+  @apply text-3xl lg:text-5xl mb-4 lg:mb-10;
+}
+
+.button{
+  @apply  flex h-12 w-44 lg:h-20 items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-24 hover:before:w-96;
+}
+
+.hover-card{@apply transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out}
+
+.header{
+  @apply w-screen h-screen;
+}
+
+.tit{
+  font-family: 'Playfair Display';
+}
+
+/* src/styles.css */
+@keyframes animate {
+  0%{
+      transform: translateY(10px) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+}
+.background{
+   @apply fixed w-screen h-screen top-0 left-0 m-0 p-0 bg-fondo2 overflow-hidden;
+}
+
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 22s linear infinite;
+}
+
+.background li:nth-child(0) {
+  left: 11%;
+  width: 96px;
+  height: 96px;
+  bottom: -96px;
+  animation-delay: 0.2s;
+}
+.background li:nth-child(1) {
+  left: 59%;
+  width: 194px;
+  height: 194px;
+  bottom: -194px;
+  animation-delay: 0.1s;
+}
+.background li:nth-child(2) {
+  left: 1%;
+  width: 186px;
+  height: 186px;
+  bottom: -186px;
+  animation-delay: 5s;
+}
+.background li:nth-child(3) {
+  left: 46%;
+  width: 224px;
+  height: 224px;
+  bottom: -224px;
+  animation-delay: 10s;
+}
+.background li:nth-child(4) {
+  left: 86%;
+  width: 216px;
+  height: 216px;
+  bottom: -216px;
+  animation-delay: 15s;
+}
+.background li:nth-child(5) {
+  left: 16%;
+  width: 216px;
+  height: 216px;
+  bottom: -216px;
+  animation-delay: 20s;
+}
+
+.top-main {
+  position: relative;
+  top: 100rem;
+}
+
+.animate-menu-appear {
+  animation: menu-appear 0.5s ease forwards;
+}
+
+@keyframes menu-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación de desaparición del menú */
+.animate-menu-disappear {
+  animation: menu-disappear 0.5s ease forwards;
+}
+
+@keyframes menu-disappear {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 9999;
+  opacity: 0; 
+  transition: opacity 0.8s ease-in-out;
+}
+
+.loading-active {
+  opacity: 1; 
+}
+
+.loading-inactive{
+  display: none;
+}
