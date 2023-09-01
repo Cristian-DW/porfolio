@@ -54,9 +54,7 @@
       border-radius: 50%;
   }
 }
-.background{
-   @apply fixed w-screen h-screen top-0 left-0 m-0 p-0 bg-fondo2 overflow-hidden;
-}
+
 
 .background li {
   position: absolute;

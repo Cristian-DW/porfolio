@@ -8,7 +8,8 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-export function ImageWithPopover({ imageUrl, name, username, bio, fecha, ubication, }) {
+// eslint-disable-next-line react/prop-types
+export function ImageWithPopover({ imageUrl, name, bio, fecha, ubication, }) {
   const [openPopover, setOpenPopover] = React.useState(false);
 
   const triggers = {
