@@ -1,7 +1,7 @@
 
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
-import Logo from '../assets/Logo.svg';
+import Logo from '../assets/logo.svg';
 import { Link } from 'react-scroll';
 
 

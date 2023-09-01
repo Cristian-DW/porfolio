@@ -10,7 +10,7 @@ import Skills from './components/skills';
 import Project from './components/project';
 import ContactForm from './components/contact';
 import Footer from './components/footer';
-import Logo from '../src/assets/Logo.svg';
+import Logo from '../src/assets/logo.svg';
 import './App.css';
 import Theme from './components/extras/themes';
 
@@ -46,7 +46,7 @@ function App() {
       </div>
       <>
         <Nav />
-        <Social />
+        <Social selectedColor={selectedColor}  />
         <Theme changeBackgroundColor={changeBackgroundColor} />
         <header className={`header fixed top-0 left-0 w-screen ${selectedColor}`}>
           <Background selectedColor={selectedColor} />

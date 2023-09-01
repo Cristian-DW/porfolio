@@ -25,7 +25,7 @@ const About= ({ selectedColor }) =>  {
   return (
     <div
       id="about"
-      className="w-full p-10   lg:py-44 bg-fondo md:grid grid-cols-5 gap-10 justify-center items-center md:pt-32 lg:px-40  lg:min-h-screen"
+      className="w-full p-10 my-10  lg:py-44 bg-fondo md:grid grid-cols-5 gap-10 justify-center items-center md:pt-32 lg:px-40  lg:min-h-screen"
     >
       <div className=" md:col-span-2 md:block xxl:flex justify-center">
        <div className='relative  w-[250px] h-[400px] mb-[30px] lg:pb-0  lg:w-[560px] lg:h-[792px] bg-black'>
