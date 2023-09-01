@@ -12,7 +12,7 @@ function Hero() {
   return (
     <div
       id="top"
-      className=" fixed left-0 top-0  z-10 w-full flex  justify-center h-screen"
+      className=" fixed left-0 top-0   z-10 w-full flex  justify-center h-screen"
     >
       <div className=" w-full lg:px-40   flex flex-col items-center justify-center  ">
         <h1 className=" title tit mb-28 mt-28  animate-fade-down animate-once animate-delay-[900ms] animate-ease-linear  ">

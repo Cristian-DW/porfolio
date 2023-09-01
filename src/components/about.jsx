@@ -28,11 +28,9 @@ const About= ({ selectedColor }) =>  {
       className="w-full p-10   lg:py-44 bg-fondo md:grid grid-cols-5 gap-10 justify-center items-center md:pt-32 lg:px-40  lg:min-h-screen"
     >
       <div className=" md:col-span-2 md:block xxl:flex justify-center">
-       <div className='relative w-[560px] h-[792px] bg-black'>
-        <img src={textImg} alt='bienvenida' className='h-[770px] px-16 py-10 '/>
-
-
-        <div className= {`absolute w-[450px] h-[600px] bottom-14 ${backgroundClass} -right-10  bg-fondo2 m-0 p-0 `}>
+       <div className='relative  w-[250px] h-[400px] mb-[30px] lg:pb-0  lg:w-[560px] lg:h-[792px] bg-black'>
+        <img src={textImg} alt='bienvenida' className='h-[400px] px-5 lg:h-[770px] py-5 lg:px-16 lg:py-10 '/>
+        <div className= {`absolute w-[220px] lg:w-[450px] lg:h-[600px] bottom-6 lg:bottom-14 ${backgroundClass} -right-10  bg-fondo2 m-0 p-0 `}>
         <img src={ImgAbout} alt='bienvenida'/>
         </div>
 
