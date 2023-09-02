@@ -29,15 +29,15 @@ const About= ({ selectedColor }) =>  {
     >
       <div className=" md:col-span-2 md:block xxl:flex justify-center">
        <div className='relative  w-[250px] h-[400px] mb-[30px] 2xl:pb-0  2xl:w-[560px] 2xl:h-[792px] bg-black'>
-        <img src={textImg} alt='bienvenida' className='h-[400px] px-5 2xl:h-[770px] py-5 2xl:px-16 2xl:py-10 '/>
+        <img src={textImg} alt='bienvenida' width='auto' height='400px' className='h-[400px] px-5 2xl:h-[770px] py-5 2xl:px-16 2xl:py-10 '/>
         <div className= {`absolute w-[220px] 2xl:w-[450px] 2xl:h-[600px] bottom-6 2xl:bottom-14 ${backgroundClass} -right-10  bg-fondo2 m-0 p-0 `}>
-        <img src={ImgAbout} alt='bienvenida'/>
+        <img src={ImgAbout} alt='Cristian Castro' width='auto' height='400px'/>
         </div>
 
        </div>
       </div>
       <div className="  md:col-span-3">
-        <h3 className=" text-xl 2xl:text-3xl mb-4">¡HOLA!</h3>
+        <h4 className=" text-xl 2xl:text-3xl mb-4">¡HOLA!</h4>
         <p className="text-md font-light  2xl:text-lg">
           Soy Cristian Castro, un enamorado del desarrollo frontend web con
           conocimientos en la creación de experiencias digitales atractivas y
