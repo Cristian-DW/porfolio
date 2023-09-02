@@ -28,21 +28,21 @@ const ProjectsCard = ({ title, description, fecha, backgroundImage, link, link2,
         <p className="text-white font-light lg:font-normal lg:text-xl">{description}</p>
         <p className="text-white font-light text-sm lg:text-xl">{fecha}</p>
         <div className='flex gap-x-12 mt-10'> 
-       <button className=" py-1 px-3 button  hover:text-fondo md:mt-10 w-28 h-10  flex  lg:h-20 items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-10 hover:before:w-28   ">
+       <button className=" py-1 px-3 button  hover:text-fondo md:mt-10 w-36 h-10  flex items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-10 hover:before:w-36   ">
           <span className="relative z-10 text-xs lg:text-xl">
             <a href={link2} target="_blank" rel="noreferrer">GitHub</a>
           </span>
         </button>
-        <button className="py-1 px-3 button  hover:text-fondo md:mt-10 w-28 h-10  flex  lg:h-20 items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-10 hover:before:w-28    ">
+        <button className="py-1 px-3 button  hover:text-fondo md:mt-10 w-36 h-10  flex   items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-10 hover:before:w-36   ">
           <span className="relative z-10 text-xs lg:text-xl">
             <a href={link} target="_blank" rel="noreferrer">view Project</a>
           </span>
         </button>
         </div>
         <div className='absolute top-0 left-0 w-12 h-20'>
-              <img src={tecnology1} alt="html" />
-              <img src={tecnology2} alt="css" />
-              <img src={tecnology3} alt="javascript" />
+              <img width="32px" height='32px' src={tecnology1} alt="html" />
+              <img width="32px" height='32px'  src={tecnology2} alt="css" />
+              <img width="32px" height='32px'  src={tecnology3} alt="javascript" />
 
         </div>
       </div>

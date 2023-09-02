@@ -36,7 +36,7 @@ export function ImageWithPopover({ imageUrl, name, bio, fecha, ubication, }) {
           </div>
         </PopoverHandler>
         <PopoverContent
-          className="z-30 md:max-w-[24rem] w-full border-b-2 backdrop-blur-lg  shadow-md transition-shadow animate-fade-up animate-once animate-duration-500 animate-ease-linear"
+          className="z-30 md:max-w-[24rem] w-full border-b-2 backdrop-blur-lg bg-transparent shadow-md transition-shadow animate-fade-up animate-once animate-duration-500 animate-ease-linear"
           {...triggers}
         >
           {/* Popover Content */}
