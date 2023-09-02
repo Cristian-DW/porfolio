@@ -23,19 +23,19 @@ const Footer = ({ selectedColor }) => {
 
   return (
     <div className={`${backgroundClass} bg-fondo2 h-[20rem] dark:bg-gray-900`}>
-      <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="flex items-center justify-center border-b mb-3 md:mb-16 ">
+      <div className="w-full max-w-screen-xl mx-auto p-4 lg:py-8">
+        <div className="flex items-center justify-center border-b mb-3 lg:mb-16 ">
           <a href="/" className="flex items-center  sm:mb-0">
-            <img src={Logo} className=" h-16 md:h-20" alt="Logo" />
+            <img src={Logo} className=" h-16 lg:h-20" alt="Logo" />
           </a>
         </div>
-        <div className="flex items-center justify-center  md:mb-16">
-          <div className="flex space-x-3  md:space-x-10 text-white">
+        <div className="flex items-center justify-center  lg:mb-16">
+          <div className="flex space-x-3  lg:space-x-10 text-white">
             <Link
               to="about"
               smooth={true}
               duration={900}
-              className="py-4 text-xs md:text-2xl md:font-nav font-medium hover:border-b-2 button-hover cursor-pointer"
+              className="py-4 text-xs lg:text-2xl md:font-nav font-medium hover:border-b-2 button-hover cursor-pointer"
             >
               Conóceme
             </Link>
@@ -44,7 +44,7 @@ const Footer = ({ selectedColor }) => {
               smooth={true}
               duration={900}
               offset={-420}
-              className="py-4 text-xs md:text-2xl md:font-nav font-medium hover:border-b-2 button-hover cursor-pointer"
+              className="py-4 text-xs lg:text-2xl md:font-nav font-medium hover:border-b-2 button-hover cursor-pointer"
             >
               Habilidades
             </Link>
@@ -52,7 +52,7 @@ const Footer = ({ selectedColor }) => {
               to="education"
               smooth={true}
               duration={900}
-              className=" py-4 text-xs md:text-2xl  md:font-nav font-medium hover:border-b-2 button-hover cursor-pointer"
+              className=" py-4 text-xs lg:text-2xl  md:font-nav font-medium hover:border-b-2 button-hover cursor-pointer"
             >
               Educación
             </Link>
@@ -61,7 +61,7 @@ const Footer = ({ selectedColor }) => {
               smooth={true}
               duration={900}
               offset={-100}
-              className="py-4 text-xs md:text-2xl md:font-nav font-medium hover:border-b-2 button-hover cursor-pointer"
+              className="py-4 text-xs lg:text-2xl md:font-nav font-medium hover:border-b-2 button-hover cursor-pointer"
             >
               Proyectos
             </Link>
@@ -70,14 +70,14 @@ const Footer = ({ selectedColor }) => {
               to="contact"
               smooth={true}
               duration={900}
-              className="py-4 text-xs md:text-2xl md:font-nav font-medium hover:border-b-2 button-hover cursor-pointer"
+              className="py-4 text-xs lg:text-2xl md:font-nav font-medium hover:border-b-2 button-hover cursor-pointer"
             >
               Contáctame
             </Link>
           </div>
         </div>
-        <hr className=" border-gray-200 sm:mx-auto dark:border-gray-700  mb-12  md:mb-4 " />
-        <span className="block text-sm  md:text-2xl text-letra text-center dark:text-gray-400">
+        <hr className=" border-gray-200 sm:mx-auto dark:border-gray-700  mb-12  lg:mb-4 " />
+        <span className="block text-sm  lg:text-2xl text-letra text-center dark:text-gray-400">
           © 2023{" "}
           <a
             href="https://www.linkedin.com/in/cristian-castro-pineda/"

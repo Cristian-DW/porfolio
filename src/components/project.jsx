@@ -88,7 +88,7 @@ const Project = () => {
   ];
 
   return (
-    <div id="porfolio"  className="flex flex-col my-28 lg:px-[10rem] justify-center items-center min-h-screen  ">
+    <div id="porfolio"  className="flex flex-col  my-28 lg:px-[10rem] justify-center items-center min-h-screen  ">
       <h2 className="subtitle text-center">Proyectos</h2>
       <p  className=" text-md font-light lg:text-2xl text-center md:mb-12">Explora mis creaciones</p>
       <div className="flex flex-wrap justify-center items-center  mx-auto gap-6 p-5 lg:p-0 ">
