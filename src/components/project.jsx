@@ -5,6 +5,10 @@ import ProjectUno from '../assets/projectUno.webp'
 import ProjectDos from '../assets/project2.webp'
 import ProjectTres from '../assets/project-3.webp'
 import ProjectCuatro from '../assets/Project4.png'
+import tecnology1 from '../assets/html.svg'
+import tecnology2 from '../assets/css.svg'
+import tecnology3 from '../assets/js.svg'
+
 
 
 
@@ -24,16 +28,22 @@ const ProjectsCard = ({ title, description, fecha, backgroundImage, link, link2,
         <p className="text-white font-light lg:font-normal lg:text-xl">{description}</p>
         <p className="text-white font-light text-sm lg:text-xl">{fecha}</p>
         <div className='flex gap-x-12 mt-10'> 
-       <button className="border py-1 px-3 button  hover:text-fondo md:mt-10 md:w-48   ">
+       <button className=" py-1 px-3 button  hover:text-fondo md:mt-10 w-28 h-10  flex  lg:h-20 items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-10 hover:before:w-28   ">
           <span className="relative z-10 text-xs lg:text-xl">
             <a href={link2} target="_blank" rel="noreferrer">GitHub</a>
           </span>
         </button>
-        <button className="py-1 px-3 border   button  hover:text-fondo md:mt-10 md:w-48    ">
+        <button className="py-1 px-3 button  hover:text-fondo md:mt-10 w-28 h-10  flex  lg:h-20 items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-10 hover:before:w-28    ">
           <span className="relative z-10 text-xs lg:text-xl">
             <a href={link} target="_blank" rel="noreferrer">view Project</a>
           </span>
         </button>
+        </div>
+        <div className='absolute top-0 left-0 w-12 h-20'>
+              <img src={tecnology1} alt="html" />
+              <img src={tecnology2} alt="css" />
+              <img src={tecnology3} alt="javascript" />
+
         </div>
       </div>
     </div>
@@ -78,7 +88,7 @@ const Project = () => {
   ];
 
   return (
-    <div id="porfolio"  className="flex flex-col my-28 lg:px-[40rem] justify-center items-center min-h-screen  ">
+    <div id="porfolio"  className="flex flex-col my-28 lg:px-[20rem] justify-center items-center min-h-screen  ">
       <h2 className="subtitle text-center">Proyectos</h2>
       <p  className=" text-md font-light lg:text-2xl text-center md:mb-12">Explora mis creaciones</p>
       <div className="flex flex-wrap justify-center items-center  mx-auto gap-6 p-5 lg:p-0 ">
