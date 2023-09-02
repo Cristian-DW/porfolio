@@ -15,10 +15,10 @@ function Hero() {
       className=" fixed left-0 top-0   z-10 w-full flex  justify-center h-screen"
     >
       <div className=" w-full lg:px-40   flex flex-col items-center justify-center  ">
-        <h1 className=" title tit  lg:mb-28 lg:mt-28  animate-fade-down animate-once animate-delay-[900ms] animate-ease-linear  ">
+        <h1 className=" title tit  lg:mb-20 lg:mt-20  animate-fade-down animate-once animate-delay-[900ms] animate-ease-linear  ">
           Desarrollador Frontend
         </h1>
-        <div className="  w-full mt-20  lg:h-[20rem] flex justify-center  lg:justify-between  items-center lg:items-stretch">
+        <div className="  w-full mt-10  lg:h-[20rem] flex justify-center  lg:justify-between  items-center lg:items-stretch">
           <button className="button  lg:mt-28  lg:w-72  lg:ml-28 hover:text-fondo2  animate-fade-down animate-once animate-delay-[1500ms] animate-ease-linear  ">
             <span className="relative z-10">
               <a href="#porfolio" className=" text-sm lg:text-xl">Explora mis creaciones </a>
