@@ -8,7 +8,7 @@ export const theme = {
     colors: {
       fondo: '#060918',
       fondo2: '#6919ff',
-      fondo3: '#943894',
+      fondo3: '#588157',
       fondo4: '#3f9499',
       letra: '#fffef9',
     },
