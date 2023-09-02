@@ -10,17 +10,17 @@ function Education() {
   return (
     <div
       id="education"
-      className="p-10   mb-24 mt-20   md:py-40  md:pb-24  lg:grid  grid-cols-7 gap-x-10 justify-center items-center lg:px-40 lg:min-h-screen "
+      className="p-10   mb-24 mt-20   md:py-40  md:pb-24  2xl:grid  grid-cols-7 gap-x-10 justify-center items-center 2xl:px-40 2xl:min-h-screen "
     >
-      <div className=" md:mb-8 lg:col-span-4 flex-col xxl:flex justify-center lg:border-r-2 lg:pr-4">
-        <h3 className="subtitle text-center lg:text-left">
+      <div className=" md:mb-8 2xl:col-span-4 flex-col xxl:flex justify-center 2xl:border-r-2 2xl:pr-4">
+        <h3 className="subtitle text-center 2xl:text-left">
           Educación
         </h3>
-        <p className="text-md font-light lg:text-2xl">
+        <p className="text-md font-light 2xl:text-lg">
           Profesional capacitado y apasionado por la creación de soluciones tecnológicas innovadoras. Mi sólida formación en análisis y desarrollo de aplicaciones me ha brindado una comprensión profunda de cómo crear sistemas eficientes y robustos. Sin embargo, mi enfoque va más allá de la funcionalidad técnica: combino mis habilidades técnicas con un conocimiento profundo de marketing digital y diseño UX/UI para ofrecer productos que no solo cumplen con los requisitos técnicos, sino que también cautivan a los usuarios y generan resultados comerciales positivos.
         </p>
       </div>
-      <div className="lg:col-span-3 flex justify-between  md:justify-around lg:justify-between">
+      <div className="2xl:col-span-3 flex justify-between  md:justify-around 2xl:justify-between">
         <article className="hover:cursor-pointer">
           <ImageWithPopover
             imageUrl={ImgSena}
@@ -52,7 +52,7 @@ function Education() {
           />
         </article>
         
-        <article className="hidden lg:block hover:cursor-pointer">
+        <article className="hidden 2xl:block hover:cursor-pointer">
           <ImageWithPopover
             imageUrl={ImgGoogle}
             name="Certificación en fundamentos del Marketing Digital"

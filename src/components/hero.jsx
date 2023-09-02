@@ -14,17 +14,17 @@ function Hero() {
       id="top"
       className=" fixed left-0 top-0   z-10 w-full flex  justify-center h-screen"
     >
-      <div className=" w-full lg:px-40   flex flex-col items-center justify-center  ">
-        <h1 className=" title tit  lg:mb-10 lg:mt-10  animate-fade-down animate-once animate-delay-[900ms] animate-ease-linear  ">
+      <div className=" w-full 2xl:px-40   flex flex-col items-center justify-center  ">
+        <h1 className=" title tit  2xl:mb-10 2xl:mt-10  animate-fade-down animate-once animate-delay-[900ms] animate-ease-linear  ">
           Desarrollador Frontend
         </h1>
-        <div className="  w-full  lg:h-[20rem] flex justify-center  lg:justify-between  items-center lg:items-stretch">
-          <button className="button  lg:mt-28  lg:w-72  lg:ml-28 hover:text-fondo  animate-fade-down animate-once animate-delay-[1500ms] animate-ease-linear  ">
+        <div className="  w-full  2xl:h-[20rem] flex justify-center  2xl:justify-between  items-center 2xl:items-stretch">
+          <button className="button  2xl:mt-28  2xl:w-72  2xl:ml-28 hover:text-fondo  animate-fade-down animate-once animate-delay-[1500ms] animate-ease-linear  ">
             <span className="relative z-10">
-              <a href="#porfolio" className=" text-sm lg:text-xl">Explora mis creaciones </a>
+              <a href="#porfolio" className=" text-sm 2xl:text-xl">Explora mis creaciones </a>
             </span>
           </button>
-          <p className=" hidden lg:block lg:mt-28 lg:w-[35rem] lg:mb-44 lg:text-2xl text-end font-light">
+          <p className=" hidden 2xl:block 2xl:mt-28 2xl:w-[35rem] 2xl:mb-44 2xl:text-lg text-end font-light">
             {" "}
             Exploro el emocionante universo del desarrollo frontend con pasión y
             creatividad, fusionando diseño y código para crear experiencias web

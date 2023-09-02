@@ -49,45 +49,45 @@ const Skills = ({ selectedColor }) =>   {
 
   return (
     
-    <div  id='skill' className={ `h-32 ${backgroundClass}   md:mt-44 lg:h-72  flex flex-col justify-center items-center  `}>
+    <div  id='skill' className={ `h-32 ${backgroundClass}   md:mt-44 2xl:h-72  flex flex-col justify-center items-center  `}>
       <div  className='w-1/2 h-40  flex justify-center items-center'>
       <Slider {...settings} className='w-full '>
       <div  className="flex justify-center items-center h-full ml-3  md:ml-14"> 
-          <img src={ImgSkill} alt="imag" width="20px" height="20px" className=" w-20 lg:w-40" />
-          <p className=' hidden lg:block  ml-14'>HTML</p>
+          <img src={ImgSkill} alt="imag" width="20px" height="20px" className=" w-20 2xl:w-40" />
+          <p className=' hidden 2xl:block  ml-14'>HTML</p>
         </div>
         <div className="flex justify-center items-center h-full ml-3   md:ml-14"> 
         
-          <img src={ImgSkill2} alt="ima2" width="20px" height="20px"  className=" w-20 lg:w-40" />
-          <p className=' hidden lg:block  ml-16'>CSS</p>
+          <img src={ImgSkill2} alt="ima2" width="20px" height="20px"  className=" w-20 2xl:w-40" />
+          <p className=' hidden 2xl:block  ml-16'>CSS</p>
         </div>
         <div className="flex justify-center items-center h-full ml-3   md:ml-14"> 
         
-          <img src={ImgSkill3} alt="ima3" width="20px" height="20px"  className= " w-20 lg:w-40" />
-          <p className=' hidden lg:block  md:ml-10'>JavaScript</p>
+          <img src={ImgSkill3} alt="ima3" width="20px" height="20px"  className= " w-20 2xl:w-40" />
+          <p className=' hidden 2xl:block  md:ml-10'>JavaScript</p>
         </div>
         <div className="flex justify-center items-center h-full ml-3  md:ml-14"> 
         
-          <img src={ImgSkill4} alt="ima3" width="20px" height="20px"  className= " w-20 lg:w-40" />
-          <p className='hidden lg:block  ml-16'>Git</p>
+          <img src={ImgSkill4} alt="ima3" width="20px" height="20px"  className= " w-20 2xl:w-40" />
+          <p className='hidden 2xl:block  ml-16'>Git</p>
           
         </div>
         <div className="flex justify-center items-center h-full ml-3   md:ml-14"> 
         
-          <img src={ImgSkill5} alt="ima3"width="20px" height="20px"  className= " w-20 lg:w-40" />
-          <p className='hidden lg:block  ml-12'>React.js</p>
+          <img src={ImgSkill5} alt="ima3"width="20px" height="20px"  className= " w-20 2xl:w-40" />
+          <p className='hidden 2xl:block  ml-12'>React.js</p>
 
         </div>
         <div className="flex justify-center items-center h-full ml-3 md:ml-14"> 
         
-          <img src={ImgSkill7} alt="ima3" width="20px" height="20px"  className= " w-20 lg:w-40" />
-          <p className='hidden lg:block  ml-12'>Figma</p>
+          <img src={ImgSkill7} alt="ima3" width="20px" height="20px"  className= " w-20 2xl:w-40" />
+          <p className='hidden 2xl:block  ml-12'>Figma</p>
 
         </div>
         <div className="flex justify-center items-center h-full ml-3 md:ml-14"> 
         
-          <img src={ImgSkill6} alt="ima3" width="20px" height="20px"  className= " w-20 lg:w-40" />
-          <p className='hidden lg:block  ml-14'>SASS</p>
+          <img src={ImgSkill6} alt="ima3" width="20px" height="20px"  className= " w-20 2xl:w-40" />
+          <p className='hidden 2xl:block  ml-14'>SASS</p>
 
         </div>
       </Slider>

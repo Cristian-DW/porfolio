@@ -22,7 +22,7 @@ export function ImageWithPopover({ imageUrl, name, bio, fecha, ubication, }) {
       <img width='16px' height='16px'
         src={imageUrl}
         alt={name}
-        className="object-cover w-16 lg:w-24 mt-10 h-auto  cursor-pointer"
+        className="object-cover w-16 2xl:w-24 mt-10 h-auto  cursor-pointer"
         {...triggers}
       />
       <Popover
