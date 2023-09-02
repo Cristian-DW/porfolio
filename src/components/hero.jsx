@@ -18,7 +18,7 @@ function Hero() {
         <h1 className=" title tit  lg:mb-10 lg:mt-10  animate-fade-down animate-once animate-delay-[900ms] animate-ease-linear  ">
           Desarrollador Frontend
         </h1>
-        <div className="  w-full mt-10  lg:h-[10rem] flex justify-center  lg:justify-between  items-center lg:items-stretch">
+        <div className="  w-full  lg:h-[20rem] flex justify-center  lg:justify-between  items-center lg:items-stretch">
           <button className="button  lg:mt-28  lg:w-72  lg:ml-28 hover:text-fondo2  animate-fade-down animate-once animate-delay-[1500ms] animate-ease-linear  ">
             <span className="relative z-10">
               <a href="#porfolio" className=" text-sm lg:text-xl">Explora mis creaciones </a>
