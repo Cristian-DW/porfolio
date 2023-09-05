@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 2000);
   }, []);
 
   // Función para cambiar el color de fondo
