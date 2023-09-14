@@ -97,12 +97,12 @@ const Nav = () => {
       </nav>
 
       {/* Capa de fondo desenfocado */}
-      {isMobileMenuOpen && <div className="fixed inset-0 top-16 right-0 w-full z-30 backdrop-blur-lg backdrop-filter animate-fade-left animate-once animate-duration-1000 animate-delay-700 animate-ease-linear   " onClick={toggleMobileMenu} />}
+      {isMobileMenuOpen && <div className="fixed inset-0 top-16 right-0 w-full z-30 backdrop-blur-lg backdrop-filter animate-fade-left animate-once animate-duration-500 animate-delay-100 animate-ease-linear   " onClick={toggleMobileMenu} />}
 
       {/* Componente del menú desplegable */}
       {isMobileMenuOpen && (
         <div
-          className={`2xl:hidden ${mobileMenuClasses} fixed top-16 right-0 w-full h-full bg-fondo z-30 animate-fade-left animate-once animate-duration-1000 animate-delay-700 animate-ease-linear `}
+          className={`2xl:hidden ${mobileMenuClasses} fixed top-16 right-0 w-full h-full bg-fondo z-30 animate-fade-left animate-once animate-duration-800 animate-delay-100 animate-ease-linear `}
         >
           <div className="flex flex-col items-center justify-around w-full">
             <Link

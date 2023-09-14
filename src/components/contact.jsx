@@ -80,7 +80,7 @@ const ContactForm = () => {
             />
           </div>
           <button
-            className="flex h-12 w-full 2xl:w-full mt-10 items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-12 hover:before:w-[28.2rem] hover:text-fondo"
+            className="flex mx-auto h-12 w-full md:w-[28.2rem] 2xl:w-full mt-10 items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-12 hover:before:w-[28.2rem] hover:text-fondo"
             type="submit"
           >
             <span className="z-20">Enviar &#x1F680;</span>
