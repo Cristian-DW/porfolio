@@ -60,6 +60,7 @@ function App() {
           <Project  />
           <ContactForm />
           <Footer selectedColor={selectedColor} />
+          
         </main>
       </>
     </div>
