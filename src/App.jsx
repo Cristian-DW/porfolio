@@ -13,6 +13,7 @@ import Footer from './components/footer';
 import Logo from '../src/assets/logo.svg';
 import './App.css';
 import Theme from './components/extras/themes';
+import FirstProject from './pages/firstProject';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
