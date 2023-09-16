@@ -8,13 +8,13 @@ export const theme = {
     colors: {
       fondo: '#060918',
       fondo2: '#6919ff',
-      fondo3: '#588157',
+      fondo3: '#641f5e',
       fondo4: '#3f9499',
       letra: '#fffef9',
     },
     fontFamily: {
       roboto: ['Roboto Slab'],
-      playfair: [ 'Playfair Display']
+      Peralta: ['Peralta'],
     },
     // fontSize:{
     //   tit:'120px',

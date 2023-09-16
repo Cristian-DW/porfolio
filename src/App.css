@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=PT+Sans:wght@400;700&family=Roboto+Slab:wght@200;300;400;500;600;700;800&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+
+
 
 @tailwind base;
 @tailwind components;
@@ -17,7 +19,7 @@
 }
 
 .title{
-  @apply text-5xl  mb-7 sm:text-5xl md:text-7xl text-center 2xl:text-left  2xl:text-[15rem];
+  @apply text-4xl  mb-7 sm:text-5xl md:text-7xl text-center 2xl:text-left  2xl:text-[12rem];
 }
 .word{
   @apply text-3xl mb-20 sm:text-lg md:text-lg 2xl:text-3xl xl:text-5xl  ;
@@ -38,8 +40,14 @@
 }
 
 .tit{
-  font-family: 'Playfair Display';
+  font-family: 'Vast Shadow';
 }
+
+
+/* //barra de desplazamiento */
+
+
+
 
 /* src/styles.css */
 @keyframes animate {
