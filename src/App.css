@@ -19,7 +19,7 @@
 }
 
 .title{
-  @apply text-4xl  mb-7 sm:text-5xl md:text-7xl text-center 2xl:text-left  2xl:text-[12rem];
+  @apply text-5xl  mb-7 sm:text-5xl md:text-7xl text-center 2xl:text-left  2xl:text-[11rem] xxl:text-[15rem];
 }
 .word{
   @apply text-3xl mb-20 sm:text-lg md:text-lg 2xl:text-3xl xl:text-5xl  ;
