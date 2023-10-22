@@ -35,6 +35,10 @@ function Hero() {
             Bienvenido a mi mundo en el desarrollo frontend! Aquí, la pasión y la creatividad se unen en un abrazo apasionado. Mi misión es fusionar diseño y código para dar vida a experiencias web que no solo cautivan, ¡sino que también conectan!
           </p>
         </div>
+        <Link
+                to="about"
+                smooth={true}
+                duration={900}>
         <a
           href="#about"
           className="absolute bottom-14  animate-bounce animate-infinite animate-duration-[2000ms] animate-delay-[5000ms]  "
@@ -48,6 +52,7 @@ function Hero() {
             className="w-10"
           />
         </a>
+        </Link>
       </div>
     </div>
   );
