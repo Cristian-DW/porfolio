@@ -17,7 +17,7 @@ function Hero() {
     >
       <div className=" w-full 2xl:px-40   flex flex-col items-center justify-center  ">
         <h1 className=" title tit  2xl:mb-10 2xl:mt-10  animate-fade-down animate-once animate-delay-[900ms] animate-ease-linear  ">
-          Desarrollador Frontend
+          Desarrollador de Software
         </h1>
         <div className="  w-full  2xl:h-[20rem] flex justify-center  2xl:justify-between  items-center 2xl:items-stretch">
         <Link
