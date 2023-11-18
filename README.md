@@ -1,8 +1,20 @@
-# React + Vite
+# Porfolio web (Cristian Castro) 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi mundo en el desarrollo frontend! Aquí, la pasión y la creatividad se unen en un abrazo apasionado. Mi misión es fusionar diseño y código para dar vida a experiencias web que no solo cautivan, ¡sino que también conectan!
 
-Currently, two official plugins are available:
+## Capturas de Pantalla
+<img align="center" width="600" src="https://github.com/Cristian-DW/layout/blob/main/porfolio-ones.JPG" />
+<img align="center" width="600" src="https://github.com/Cristian-DW/layout/blob/main/porfolio-one.JPG" />
+<img align="center" width="600" src="https://github.com/Cristian-DW/layout/blob/main/Poroflio-two.JPG" />
+<img align="center" width="600" src="https://github.com/Cristian-DW/layout/blob/main/Poroflio-three.JPG" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías Utilizadas
+
+- React
+- Tailwind CSS
+
+## Instalación
+
+[¡Haz clic aquí para ver mi portfolio en línea!](https://cristiancastro.netlify.app/)
+
+
