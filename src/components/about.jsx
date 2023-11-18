@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import textImg from '../assets/text-img.webp';
 import ImgAbout from '../assets/about.webp';
-
+import { Link } from 'react-scroll';
 
 
 const About= ({ selectedColor }) =>  {
@@ -39,19 +39,24 @@ const About= ({ selectedColor }) =>  {
       <div className="  md:col-span-3">
         <h4 className=" text-xl 2xl:text-3xl mb-4">¡HOLA!</h4>
         <p className="text-md font-light  2xl:text-lg">
-          Soy Cristian Castro, un enamorado del desarrollo frontend web con
+          Soy Cristian Castro, un enamorado del desarrollo de software con
           conocimientos en la creación de experiencias digitales atractivas y
           funcionales. Durante mi carrera profesional, he trabajado en diversos
-          proyectos, desde sitios web empresariales hasta aplicaciones web
+          proyectos, desde sitios web robustos hasta aplicaciones web
           dinámicas. Estoy familiarizado con los estándares de la industria y
-          las mejores prácticas de desarrollo frontend, y me mantengo
+          las mejores prácticas de desarrollo  y me mantengo
           actualizado con las últimas tendencias y tecnologías.{" "}
         </p>
-        <button className=" hidden   button  2xl:hover:text-fondo mt-20 w-48">
-          <span className="relative z-10">
-            <a href="#contact">Contáctame</a>
-          </span>
-        </button>
+        <Link
+                to="contact"
+                smooth={true}
+                duration={900}>
+        <button className="button  2xl:mt-28  2xl:w-72  hover:text-fondo  animate-fade-down animate-once animate-delay-[3000ms] animate-ease-linear  ">
+            <span className="relative z-10">
+                  <a href="#contact" className="text-sm xl:text-xl">Contáctame</a>
+            </span>
+          </button>
+          </Link>
       </div>
       
     </div>
