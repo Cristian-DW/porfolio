@@ -7,7 +7,7 @@ export const theme = {
   extend: {
     colors: {
       fondo: '#060918',
-      fondo2: '#6919ff',
+      fondo2: '#2069a2',
       fondo3: '#641f5e',
       fondo4: '#3f9499',
       letra: '#fffef9',

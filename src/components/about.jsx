@@ -51,7 +51,7 @@ const About= ({ selectedColor }) =>  {
                 to="contact"
                 smooth={true}
                 duration={900}>
-        <button className="button  2xl:mt-28  2xl:w-72  hover:text-fondo  animate-fade-down animate-once animate-delay-[3000ms] animate-ease-linear  ">
+        <button className="button  2xl:mt-28  2xl:w-52  hover:text-fondo  animate-fade-down animate-once animate-delay-[3000ms] animate-ease-linear  ">
             <span className="relative z-10">
                   <a href="#contact" className="text-sm xl:text-xl">Contáctame</a>
             </span>
