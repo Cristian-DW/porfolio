@@ -13,7 +13,7 @@ Bienvenido a mi mundo en el desarrollo frontend! Aquí, la pasión y la creativi
 - React
 - Tailwind CSS
 
-## Instalación
+## Visita y contáctame  
 
 [¡Haz clic aquí para ver mi portfolio en línea!](https://cristiancastro.netlify.app/)
 
