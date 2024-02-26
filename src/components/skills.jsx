@@ -81,7 +81,7 @@ const Skills = ({ selectedColor }) =>   {
         <div className="flex justify-center items-center h-full ml-3 md:ml-14"> 
         
           <img src={ImgSkill7} alt="ima3" width="20px" height="20px"  className= " w-20 2xl:w-40" />
-          <p className='hidden 2xl:block  ml-12'>Figma</p>
+          <p className='hidden md:block  ml-12'>Figma</p>
 
         </div>
         <div className="flex justify-center items-center h-full ml-3 md:ml-14"> 
