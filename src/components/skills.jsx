@@ -54,28 +54,28 @@ const Skills = ({ selectedColor }) =>   {
       <Slider {...settings} className='w-full '>
       <div  className="flex justify-center items-center h-full ml-3  md:ml-14"> 
           <img src={ImgSkill} alt="imag" width="20px" height="20px" className=" w-20 2xl:w-40" />
-          <p className=' hidden 2xl:block  ml-14'>HTML</p>
+          <p className=' hidden md:block  ml-14'>HTML</p>
         </div>
         <div className="flex justify-center items-center h-full ml-3   md:ml-14"> 
         
           <img src={ImgSkill2} alt="ima2" width="20px" height="20px"  className=" w-20 2xl:w-40" />
-          <p className=' hidden 2xl:block  ml-16'>CSS</p>
+          <p className=' hidden md:block  ml-16'>CSS</p>
         </div>
         <div className="flex justify-center items-center h-full ml-3   md:ml-14"> 
         
           <img src={ImgSkill3} alt="ima3" width="20px" height="20px"  className= " w-20 2xl:w-40" />
-          <p className=' hidden 2xl:block  md:ml-10'>JavaScript</p>
+          <p className=' hidden md:block  md:ml-10'>JavaScript</p>
         </div>
         <div className="flex justify-center items-center h-full ml-3  md:ml-14"> 
         
           <img src={ImgSkill4} alt="ima3" width="20px" height="20px"  className= " w-20 2xl:w-40" />
-          <p className='hidden 2xl:block  ml-16'>Git</p>
+          <p className='hidden md:block  ml-16'>Git</p>
           
         </div>
         <div className="flex justify-center items-center h-full ml-3   md:ml-14"> 
         
           <img src={ImgSkill5} alt="ima3"width="20px" height="20px"  className= " w-20 2xl:w-40" />
-          <p className='hidden 2xl:block  ml-12'>React.js</p>
+          <p className='hidden md:block  ml-12'>React.js</p>
 
         </div>
         <div className="flex justify-center items-center h-full ml-3 md:ml-14"> 
@@ -87,7 +87,7 @@ const Skills = ({ selectedColor }) =>   {
         <div className="flex justify-center items-center h-full ml-3 md:ml-14"> 
         
           <img src={ImgSkill6} alt="ima3" width="20px" height="20px"  className= " w-20 2xl:w-40" />
-          <p className='hidden 2xl:block  ml-14'>SASS</p>
+          <p className='hidden md:block  ml-14'>SASS</p>
 
         </div>
       </Slider>
