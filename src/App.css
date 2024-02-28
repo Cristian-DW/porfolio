@@ -47,16 +47,9 @@
 /* //barra de desplazamiento */
 
 ::-webkit-scrollbar {
-  width: .4vw; 
+  width: 0vw; 
   background-color: #060918; 
 }
-
-::-webkit-scrollbar-thumb {
-  background-color: #ffffff26; /* Color de la barra */
-  border-radius: 4px; 
- width: 50%;
-}
-
 
 
 

@@ -8,7 +8,7 @@ import tecnology3 from '../../assets/js.svg'
 
 const ProjectsCard = ({ title, description, fecha, backgroundImage, link, link2, }) => {
     return (
-      <div className="relative w-20 h-44  md:w-[25rem] md:h-[40rem] shadow-md overflow-hidden transform transition-transform  hover:scale-105 duration-1000 ease-in-out">
+      <div className="relative w-80 h-44  md:w-[25rem] md:h-[40rem] shadow-md overflow-hidden transform transition-transform  hover:scale-105 duration-1000 ease-in-out">
         <div
           className="absolute inset-0 bg-center opacity-80 transform transition-transform bg-cover  hover:scale-105 duration-1000 ease-in-out"
           style={{ backgroundImage: `url(${backgroundImage})` }}

@@ -37,7 +37,7 @@ const Project = () => {
       link:"https://cristian-dw.github.io/todoList/" ,
     },
      {
-      title: "Weather App"
+      title: "Weather App",
       description: "App",
       fecha: "Julio de 2023",
       backgroundImage: ProjectCuatro,
@@ -48,8 +48,8 @@ const Project = () => {
 
   return (
     <>
-    <h2 className='text-center mb-4 text-4xl 2xl:text-5xl'>Proyectos</h2>
-    <p className='text-center text-lg 2xl:text-xl'>Explora mi maravilloso mundo</p>
+    <h2 className='text-center mb-4 text-3xl 2xl:text-5xl'>Proyectos</h2>
+    <p className='text-center text-md 2xl:text-xl'>Explora mi maravilloso mundo</p>
     <Carousel indicatorsType="ring" indicators={true} itemToShow={3} autoPlay={false} className='w-full min-h-screen'>
       <div className="flex flex-wrap justify-center items-center  mx-auto gap-12 p-5 rounded-xl 2xl:p-0  ">
         {projects.map((project, index) => (
