@@ -1,4 +1,4 @@
-# Porfolio web (Cristian Castro) 
+# Porfolio web (Cristian Castro) 🛸
 
 Bienvenido a mi mundo en el desarrollo frontend! Aquí, la pasión y la creatividad se unen en un abrazo apasionado. Mi misión es fusionar diseño y código para dar vida a experiencias web que no solo cautivan, ¡sino que también conectan!
 
@@ -13,7 +13,7 @@ Bienvenido a mi mundo en el desarrollo frontend! Aquí, la pasión y la creativi
 - React
 - Tailwind CSS
 
-## Instalación
+## Visita y contáctame  
 
 [¡Haz clic aquí para ver mi portfolio en línea!](https://cristiancastro.netlify.app/)
 
