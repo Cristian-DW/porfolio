@@ -6,7 +6,6 @@ Bienvenido a mi mundo en el desarrollo frontend! Aquí, la pasión y la creativi
 <img align="center" width="600" src="https://github.com/Cristian-DW/layout/blob/main/porfolio-ones.JPG" />
 <img align="center" width="600" src="https://github.com/Cristian-DW/layout/blob/main/porfolio-one.JPG" />
 <img align="center" width="600" src="https://github.com/Cristian-DW/layout/blob/main/Poroflio-two.JPG" />
-<img align="center" width="600" src="https://github.com/Cristian-DW/layout/blob/main/Poroflio-three.JPG" />
 
 ## Tecnologías Utilizadas
 
