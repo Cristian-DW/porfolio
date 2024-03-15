@@ -9,11 +9,13 @@ Bienvenido a mi mundo en el desarrollo frontend! Aquí, la pasión y la creativi
 
 ## Tecnologías Utilizadas
 
-- React
+- React.js 
 - Tailwind CSS
 
 ## Visita y contáctame  
 
 [¡Haz clic aquí para ver mi portfolio en línea!](https://cristiancastro.netlify.app/)
+
+
 
 
