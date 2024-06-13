@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=PT+Sans:wght@400;700&family=Roboto+Slab:wght@200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
 
 
 
@@ -19,36 +18,38 @@
 }
 
 .title{
-  @apply text-[2.4rem]  mb-12  md:text-[5rem] text-center 2xl:text-left  2xl:text-[11rem] xxl:text-[13rem];
+  @apply text-[2rem]  mb-12  md:text-[2.5rem] text-center  2xl:text-[5rem] xxl:text-[8rem] ;
+  font-family: "Slackey", sans-serif;
+  
 }
+
+
 .word{
   @apply text-3xl mb-20 sm:text-lg md:text-lg 2xl:text-3xl xl:text-5xl  ;
 }
 
-.subtitle{
-  @apply text-3xl 2xl:text-5xl mb-4 2xl:mb-10;
-}
 
 .button{
-  @apply  flex h-12 w-44 2xl:h-20 items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-24 hover:before:w-96;
+  @apply  flex h-12 w-44 2xl:h-20 items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-blue-200  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-24 hover:before:w-96;
 }
 
-.hover-card{@apply transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out}
+.hover-card{
+  @apply transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out}
 
 .header{
   @apply w-screen h-screen;
 }
 
-.tit{
-  font-family: 'Vast Shadow';
+.text-outline {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
 }
 
-
-/* //barra de desplazamiento */
+/* barra de desplazamiento */
 
 ::-webkit-scrollbar {
-  width: 0vw; 
-  background-color: #060918; 
+  width: 0.01vw; 
+  background-color: #f5f5f5; 
 }
 
 
@@ -76,7 +77,7 @@
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #000000;
   animation: animate 22s linear infinite;
 }
 
