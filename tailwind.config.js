@@ -7,7 +7,7 @@ export const theme = {
   extend: {
     colors: {
       fondo: '#060918',
-      fondo2: '#2069a2',
+      fondo2: '#fff',
       fondo3: '#641f5e',
       fondo4: '#3f9499',
       letra: '#fffef9',
@@ -22,7 +22,6 @@ export const theme = {
     screens: {
       'xxl': '2560px',
     },
-
   },
 };
 export const plugins = [
