@@ -18,14 +18,22 @@
 }
 
 .title{
-  @apply text-[2rem]  mb-12  md:text-[2.5rem] text-center  2xl:text-[5rem] xxl:text-[8rem] ;
+  @apply text-[2rem]  mb-12  md:text-[2.5rem] text-center  2xl:text-[4rem] xxl:text-[11rem] ;
   font-family: "Slackey", sans-serif;
   
 }
 
+.text-border{
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
 
 .word{
   @apply text-3xl mb-20 sm:text-lg md:text-lg 2xl:text-3xl xl:text-5xl  ;
+}
+
+.img-position{
+  @apply absolute 2xl:bottom-0 xxl:bottom-[-125px] left-0 w-full h-full;
 }
 
 
@@ -40,10 +48,7 @@
   @apply w-screen h-screen;
 }
 
-.text-outline {
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: black;
-}
+
 
 /* barra de desplazamiento */
 
@@ -77,7 +82,7 @@
   list-style: none;
   width: 20px;
   height: 20px;
-  background: #000000;
+  background: #d3d3d3;
   animation: animate 22s linear infinite;
 }
 

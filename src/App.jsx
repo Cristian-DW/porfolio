@@ -53,7 +53,7 @@ function App() {
           <Background selectedColor={selectedColor} />
           <Hero />
         </header>
-        <main className={`top-main md:relative md:top-[85rem] z-20  bg-fondo`}>
+        <main className={`top-main md:relative md:top-[100rem] z-20  bg-fondo`}>
           <About selectedColor={selectedColor}  />
           <Skills  selectedColor={selectedColor}  />
           <Education  />

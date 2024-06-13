@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from 'react-scroll';
+import heroImg from "../assets/heroImg.png";
 
 function Hero() {
   return (
@@ -8,21 +9,21 @@ function Hero() {
       id="top"
       className=" fixed left-0 top-0   z-10 w-full flex  justify-center h-screen"
     >
-      <div className=" w-full 2xl:px-40   flex flex-col items-center justify-center  ">
-        <h1 className=" title text-outline text-black 2xl:mb-10 2xl:mt-20  animate-fade-down animate-once animate-delay-[900ms] animate-ease-linear  ">
-          Desarrollador Frontend  <span className="text-transparent">Diseñador UX UI</span>
+      <div className=" absolute w-full h-screen  2xl:px-40    flex flex-col justify-center  ">
+        <h1 className=" title text-border text-black  2xl:mb-10 2xl:mt-40  animate-fade-down animate-once animate-delay-[900ms] animate-ease-linear  ">
+          Desarrollador Frontend{" "}
+          <span className="text-transparent ">Diseñador UX UI</span>
         </h1>
+      </div>
 
-        <Link
-                to="porfolio"
-                smooth={true}
-                duration={900}>
-          <button className="button  2xl:mt-28  2xl:w-72  2xl:ml-28 hover:text-fondo  animate-fade-down animate-once animate-delay-[3000ms] animate-ease-linear  ">
-            <span className="relative z-10">
-                  <a href="#about" className="text-sm xl:text-xl">CONOCEME</a>
-            </span>
-          </button>
-           </Link>
+      <div className="aspect-square overflow-hidden relative w-6/12 h-full z-30 bottom-0">
+        <img
+          className="w-full h-auto object-contain"
+          src={heroImg}
+          alt=""
+          srcSet={`${heroImg} 20w, ${heroImg} 40w, ${heroImg} 60w`}
+          sizes="(max-width: 20px) 20px, (max-width: 40px) 40px, 80px"
+        />
       </div>
     </div>
   );
