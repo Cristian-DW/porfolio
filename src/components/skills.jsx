@@ -12,18 +12,25 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 
+/**
+ * Skills Component
+ * Displays a carousel of skills using images and names.
+ * Supports responsive layout and color customization.
+ *
+ * @param {string} selectedColor - The selected background color class.
+ */
 const Skills = ({ selectedColor }) =>   {
 
     const [backgroundClass, setBackgroundClass] = useState('bg-fondo2');
   
     useEffect(() => {
-      // Cuando selectedColor cambia en el componente App, actualiza backgroundClass
+      // Update backgroundClass based on selectedColor prop
       if (selectedColor === 'bg-fondo3') {
         setBackgroundClass('bg-fondo3');
       } else if (selectedColor === 'bg-fondo4') {
         setBackgroundClass('bg-fondo4');
       } else {
-        setBackgroundClass('bg-fondo2'); // Establece un valor predeterminado si es necesario
+        setBackgroundClass('bg-fondo2'); // Default value if necessary
       }
     }, [selectedColor]);
 
@@ -97,3 +104,4 @@ const Skills = ({ selectedColor }) =>   {
 }
 
 export default Skills;
+
