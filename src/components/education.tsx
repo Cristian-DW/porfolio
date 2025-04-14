@@ -10,7 +10,7 @@ import ImgLinkedIn from "../assets/linke.png"
  * Education component.
  * This component displays educational background and certifications with popovers for detailed information.
  */
-function Education: React.FC = () => {
+const Education: React.FC = () => {
   return (
     <div
       id="education"
@@ -35,9 +35,9 @@ function Education: React.FC = () => {
           />
         </article>
 
-        <article className="hover:cursor-pointer">
+        <article className = "hover:cursor-pointer">
           <ImageWithPopover
-            imageUrl={ImgMicrosoft}
+            imageUrl = {ImgMicrosoft}
             name="Certificación en fundamentos profesionales del Desarrollo de Software"
             bio="He ganado una comprensión profunda de los principios de la programación, algoritmos y estructuras de datos. Esta certificación respaldada por Microsoft valida mis conocimientos en un estándar reconocido en la industria."
             fecha="2023"
