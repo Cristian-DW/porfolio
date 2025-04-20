@@ -19,7 +19,7 @@ function Hero() {
         </h1>
         <div className="w-full 2xl:h-[20rem] flex justify-center 2xl:justify-between items-center 2xl:items-stretch">
           <Link
-            to="porfolio"
+            to="project"
             smooth={true}
             duration={900}
           >
