@@ -59,13 +59,11 @@ const About: React.FC<AboutProps> = ({ selectedColor }) => {
       <div className="md:col-span-3">
         <h4 className="text-xl 2xl:text-3xl mb-4">¡HOLA!</h4>
         <p className="text-md font-light 2xl:text-lg">
-          Soy Cristian Castro, un enamorado del desarrollo de software con
-          conocimientos en la creación de experiencias digitales atractivas y
-          funcionales. Durante mi carrera profesional, he trabajado en diversos
-          proyectos, desde sitios web robustos hasta aplicaciones web
-          dinámicas. Estoy familiarizado con los estándares de la industria y
-          las mejores prácticas de desarrollo y me mantengo
-          actualizado con las últimas tendencias y tecnologías.
+          Soy Cristian Castro, desarrollador de software con experiencia en el diseño y desarrollo de soluciones digitales funcionales y escalables. 
+          He trabajado en proyectos de sistemas de gestión empresarial, sistemas de facturación, pagos electrónicos, reportes personalizados y sitios web robustos. 
+          Me especializo en tecnologías como React, JavaScript y Node.js, y utilizo herramientas como Figma para crear interfaces intuitivas y enfocadas en la experiencia del usuario. 
+          Además, he implementado automatizaciones con inteligencia artificial y he diseñado identidades visuales desde cero, combinando 
+          lo técnico con lo creativo para ofrecer soluciones completas y eficientes.
         </p>
         <Link to="contact" smooth={true} duration={900}>
           <button className="button 2xl:mt-28 2xl:w-52 hover:text-fondo animate-fade-down animate-once animate-delay-[3000ms] animate-ease-linear">

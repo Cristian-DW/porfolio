@@ -58,13 +58,13 @@ const Project = () => {
   ];
 
   return (
-    <>
+    <section id="project" className="w-full min-h-screen">
       {/* Main title */}
       <h2 className='text-center mb-4 text-3xl 2xl:text-5xl'>Projects</h2>
       {/* Subtitle */}
       <p className='text-center text-md 2xl:text-xl'>Explore my wonderful world</p>
       {/* Projects carousel */}
-      <Carousel indicatorsType="ring" indicators={true} itemToShow={3} autoPlay={false} className='w-full min-h-screen'>
+      <Carousel className='w-full min-h-screen'>
         {/* Projects container */}
         <div className="flex flex-wrap justify-center items-center  mx-auto gap-12 p-5 rounded-xl 2xl:p-0  ">
           {/* Mapping through each project */}
@@ -81,7 +81,7 @@ const Project = () => {
           ))}
         </div>
       </Carousel>
-    </>
+    </section>
   );
 };
 

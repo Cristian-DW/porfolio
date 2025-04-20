@@ -37,7 +37,7 @@ const Footer: React.FC<{ selectedColor: string }> = ({ selectedColor }) => {
         </div>
         <div className="flex items-center justify-center 2xl:mb-16">
           <div className="flex space-x-3 2xl:space-x-10 text-white">
-            {['about', 'skill', 'education', 'porfolio', 'contact'].map((section, index) => (
+            {['Conóceme', 'Habilidades', 'Educación', 'Proyectos', 'Contáctame'].map((section, index) => (
               <Link
                 key={index}
                 to={section}

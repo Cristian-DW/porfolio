@@ -58,7 +58,7 @@ const Nav = () => {
                   <Link to="education" smooth={true} duration={900} className="px-2 py-2 font-nav font-medium hover:border-b-2 button-hover cursor-pointer">
                     Educación
                   </Link>
-                  <Link to="porfolio" smooth={true} duration={900} offset={-100} className="py-2 font-nav font-medium hover:border-b-2 button-hover cursor-pointer">
+                  <Link to="" smooth={true} duration={900} offset={-100} className="py-2 font-nav font-medium hover:border-b-2 button-hover cursor-pointer">
                     Proyectos
                   </Link>
                   <Link to="contact" smooth={true} duration={900} className="py-2 font-nav font-medium hover:border-b-2 button-hover cursor-pointer">
@@ -72,11 +72,11 @@ const Nav = () => {
       </nav>
 
       {/* Capa de fondo desenfocado */}
-      {isMobileMenuOpen && <div className="fixed inset-0 top-16 right-0 w-full z-30 backdrop-blur-lg backdrop-filter animate-fade-left animate-once animate-duration-500 animate-delay-100 animate-ease-linear" onClick={toggleMobileMenu} />}
+      {isMobileMenuOpen && <div className="fixed inset-0 top-16 right-0 w-full z-30 backdrop-blur-lg backdrop-filter animate-fade-left animate-once animate-duration-400 animate-delay-500 animate-ease-linear" onClick={toggleMobileMenu} />}
 
       {/* Componente del menú desplegable */}
       {isMobileMenuOpen && (
-        <div className={`2xl:hidden ${mobileMenuClasses} fixed top-16 right-0 w-full h-full bg-fondo z-30 animate-fade-left animate-once animate-duration-800 animate-delay-100 animate-ease-linear`}>
+        <div className={`2xl:hidden ${mobileMenuClasses} fixed top-16 right-0 w-full h-full bg-opacity-50 z-30 animate-fade-left animate-once animate-duration-800 animate-delay-500 animate-ease-linear`}>
           <div className="flex flex-col items-center justify-around w-full">
             <Link to="about" smooth={true} duration={900} className="block py-14 text-lg w-full text-center cursor-pointer" onClick={toggleMobileMenu}>
               Conóceme
@@ -87,7 +87,7 @@ const Nav = () => {
             <Link to="education" smooth={true} duration={900} offset={-120} className="block py-14 text-lg w-full text-center cursor-pointer" onClick={toggleMobileMenu}>
               Educación
             </Link>
-            <Link to="porfolio" smooth={true} duration={900} offset={-100} className="block py-14 text-lg w-full text-center cursor-pointer" onClick={toggleMobileMenu}>
+            <Link to="projects" smooth={true} duration={900} offset={-100} className="block py-14 text-lg w-full text-center cursor-pointer" onClick={toggleMobileMenu}>
               Proyecto
             </Link>
             <Link to="contact" smooth={true} duration={900} offset={-100} className="block py-14 text-lg w-full text-center cursor-pointer" onClick={toggleMobileMenu}>
