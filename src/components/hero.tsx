@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Down from '../assets/down.svg';
+import Down from '../assets/down.svg'; 
 import { Link } from 'react-scroll';
 
 /**
