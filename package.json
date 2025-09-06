@@ -1,13 +1,14 @@
 {
   "name": "porfolio",
-  "private": "false",
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@excalidraw/excalidraw": "^0.18.0",
@@ -31,9 +32,13 @@
     "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
+    "@types/node": "^24.3.1",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@types/react-scroll": "^1.8.10",
+    "@types/react-slick": "^0.23.13",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.45.0",
