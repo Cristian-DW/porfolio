@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "about": "Conóceme",
+    "skills": "Habilidades",
+    "education": "Educación",
+    "projects": "Proyectos",
+    "contact": "Contáctame"
+  },
+  "hero": {
+    "greeting": "¡Hola! Soy",
+    "role": "Desarrollador Fullstack",
+    "description": "Arquitectura, código y diseño en perfecta armonía.",
+    "projectsButton": "Ver Proyectos",
+    "aboutButton": "Conóceme"
+  },
+  "about": {
+    "title": "¡HOLA!",
+    "description": "Soy Cristian Castro, desarrollador de software con experiencia en el diseño y desarrollo de soluciones digitales funcionales y escalables. He trabajado en proyectos de sistemas de gestión empresarial, sistemas de facturación, pagos electrónicos, reportes personalizados y sitios web robustos. Me especializo en tecnologías como React, JavaScript y Node.js, y utilizo herramientas como Figma para crear interfaces intuitivas y enfocadas en la experiencia del usuario. Además, he implementado automatizaciones con inteligencia artificial y he diseñado identidades visuales desde cero, combinando lo técnico con lo creativo para ofrecer soluciones completas y eficientes."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "technologies": "Tecnologías",
+    "tools": "Herramientas"
+  },
+  "education": {
+    "title": "Educación",
+    "certifications": "Certificaciones",
+    "description": "Profesional capacitado y apasionado por la creación de soluciones tecnológicas innovadoras. Mi sólida formación en análisis y desarrollo de aplicaciones me ha brindado una comprensión profunda de cómo crear sistemas eficientes y robustos. Sin embargo, mi enfoque va más allá de la funcionalidad técnica: combino mis habilidades técnicas con un conocimiento profundo de marketing digital y diseño UX/UI para ofrecer productos que no solo cumplen con los requisitos técnicos, sino que también cautivan a los usuarios y generan resultados comerciales positivos.",
+    
+    "sena": {
+        "name": "Certificación tecnólogo en Análisis y Desarrollo de Software",
+        "bio": "Adquirí habilidades sólidas en el diseño, creación y mantenimiento de aplicaciones informáticas. Mi formación en el SENA me ha preparado para enfrentar desafíos en el mundo tecnológico.",
+        "fecha": "2024",
+        "ubication": "Bogotá DC"
+    },
+    "microsoft": {
+      "name": "Título profesional en Ingeniería de Sistemas",
+      "bio": "Adquirí habilidades sólidas en el diseño, creación y mantenimiento de aplicaciones informáticas. Mi formación en la UC me ha preparado para enfrentar desafíos en el mundo tecnológico.",
+      "fecha": "2020",
+      "ubication": "Bogotá DC"
+    },
+    "linkedin": {
+      "name": "Título profesional en Mercadeo",
+      "bio": "Adquirí habilidades sólidas en el diseño, creación y mantenimiento de aplicaciones informáticas. Mi formación en LinkedIn me ha preparado para enfrentar desafíos en el mundo tecnológico.",
+      "fecha": "2020",
+      "ubication": "Bogotá DC"
+    },         
+    "google": {
+      "name": "Certificación profesional de Google en Diseño UX",
+      "bio": "Aprendí los fundamentos del diseño UX, incluyendo ideación, creación de wireframes, prototipos e investigación de usuarios. Desarrollé habilidades en el uso de herramientas como Figma y Adobe XD para crear diseños centrados en el usuario.",
+      "fecha": "2023",
+      "ubication": "Online"
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "viewProject": "Ver Proyecto",
+    "sourceCode": "Código Fuente"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Hubo un error al enviar el mensaje"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  },
+  "theme": {
+    "purple": "Morado",
+    "green": "Verde",
+    "terracotta": "Terracota",
+    "ocean": "Océano"
+  },
+  "language": {
+    "select": "Seleccionar idioma",
+    "es": "Español",
+    "en": "Inglés"
+  }
+}

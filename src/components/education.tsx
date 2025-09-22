@@ -5,13 +5,16 @@ import ImgMicrosoft from "../assets/microsoft.png";
 import ImgGoogle from "../assets/google.png";
 import ImgSena from "../assets/sena.png"; 
 import ImgLinkedIn from "../assets/linke.png"
+import { useTranslation } from 'react-i18next';
 
 
 /**
  * Education component.
- * This component displays educational background and certifications with popovers for detailed information.
+ * This component displays educational background and  with popovers for detailed information.
  */
 const Education: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div
       id="education"
@@ -19,50 +22,50 @@ const Education: React.FC = () => {
     >
       <div className="md:mb-8 2xl:col-span-4 flex-col 2xl:flex justify-center 2xl:border-r-2 2xl:pr-4">
         <h3 className="subtitle text-center 2xl:text-left">
-          Educación
+          {t('education.title')}
         </h3>
         <p className="text-md font-light 2xl:text-lg">
-          Profesional capacitado y apasionado por la creación de soluciones tecnológicas innovadoras. Mi sólida formación en análisis y desarrollo de aplicaciones me ha brindado una comprensión profunda de cómo crear sistemas eficientes y robustos. Sin embargo, mi enfoque va más allá de la funcionalidad técnica: combino mis habilidades técnicas con un conocimiento profundo de marketing digital y diseño UX/UI para ofrecer productos que no solo cumplen con los requisitos técnicos, sino que también cautivan a los usuarios y generan resultados comerciales positivos.
+          {t('education.description')}
         </p>
       </div>
       <div className="2xl:col-span-3 flex justify-between md:justify-around 2xl:justify-between">
         <article className="hover:cursor-pointer">
           <ImageWithPopover
             imageUrl={ImgSena}
-            name="Certificación tecnólogo en Análisis y Desarrollo de Software"
-            bio="Adquirí habilidades sólidas en el diseño, creación y mantenimiento de aplicaciones informáticas. Mi formación en el SENA me ha preparado para enfrentar desafíos en el mundo tecnológico."
-            fecha="2024"
-            ubication="Bogotá DC"
+            name={t('education.sena.name')}
+            bio={t('education.sena.bio')}
+            fecha={t('education.sena.fecha')}
+            ubication={t('education.sena.ubication')}
           />
         </article>
 
         <article className = "hover:cursor-pointer">
           <ImageWithPopover
-            imageUrl = {ImgMicrosoft}
-            name="Certificación en fundamentos profesionales del Desarrollo de Software"
-            bio="He ganado una comprensión profunda de los principios de la programación, algoritmos y estructuras de datos. Esta certificación respaldada por Microsoft valida mis conocimientos en un estándar reconocido en la industria."
-            fecha="2023"
-            ubication="Online"
+            imageUrl={ImgMicrosoft}
+            name={t('education.microsoft.name')}
+            bio={t('education.microsoft.bio')}
+            fecha={t('education.microsoft.fecha')}
+            ubication={t('education.microsoft.ubication')}
           />
         </article>
 
         <article className="hover:cursor-pointer">
           <ImageWithPopover
             imageUrl={ImgLinkedIn}
-            name="Certificación en Diseño UI/UX: Creando Conexiones Digitales"
-            bio="Gracias a LinkedIn Learning he adquirido experiencia en crear experiencias digitales atractivas y funcionales, garantizando la satisfacción del usuario a través de diseños intuitivos y efectivos."
-            fecha="2023"
-            ubication="Online"
+            name={t('education.linkedin.name')}
+            bio={t('education.linkedin.bio')}
+            fecha={t('education.linkedin.fecha')}
+            ubication={t('education.linkedin.ubication')}
           />
         </article>
         
         <article className="hidden 2xl:block hover:cursor-pointer">
           <ImageWithPopover
             imageUrl={ImgGoogle}
-            name="Certificación en fundamentos del Marketing Digital"
-            bio="He adquirido habilidades en estrategias de publicidad, análisis de audiencia y técnicas de SEO. Con esta certificación, demuestro mi capacidad para promocionar eficazmente productos en el entorno digital."
-            fecha="2023"
-            ubication="Online"
+            name={t('education.google.name')}
+            bio={t('education.google.bio')}
+            fecha={t('education.google.fecha')}
+            ubication={t('education.google.ubication')}
           />
         </article>
       </div>

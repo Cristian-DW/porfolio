@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ImgSkill from "../assets/html.svg"
 import ImgSkill2 from "../assets/css.svg"
 import ImgSkill3 from "../assets/js.svg"
@@ -22,18 +22,6 @@ interface SkillsProps {
 
 const Skills: React.FC<SkillsProps> = ({ selectedColor }) => {
 
-    const [backgroundClass, setBackgroundClass] = useState('bg-fondo2');
-  
-    useEffect(() => {
-      // Update backgroundClass based on selectedColor prop
-      if (selectedColor === 'bg-fondo3') {
-        setBackgroundClass('bg-fondo3');
-      } else if (selectedColor === 'bg-fondo4') {
-        setBackgroundClass('bg-fondo4');
-      } else {
-        setBackgroundClass('bg-fondo2'); // Default value if necessary
-      }
-    }, [selectedColor]);
 
   const settings = {
     dots: false,
@@ -57,7 +45,7 @@ const Skills: React.FC<SkillsProps> = ({ selectedColor }) => {
 
   return (
     
-    <div  id='skill' className={ `h-32 ${backgroundClass}   md:mt-44 2xl:h-72  flex flex-col justify-center items-center  `}>
+    <div id='skill' className={`h-32 ${selectedColor} md:mt-44 2xl:h-72 flex flex-col justify-center items-center transition-colors duration-300`}>
       <div  className='w-1/2 h-40  flex justify-center items-center'>
       <Slider {...settings} className='w-full '>
       <div  className="flex justify-center items-center h-full ml-3  md:ml-14"> 

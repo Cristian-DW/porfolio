@@ -11,6 +11,7 @@ import Footer from './components/footer';
 import Logo from './assets/logo.svg';
 import './App.css';
 import Theme from './components/extras/Theme';
+import LanguageSelector from './components/extras/LanguageSelector';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -57,6 +58,7 @@ function App() {
         <div className="fixed top-0 left-0 w-full z-50">
           <Nav />
           <Theme changeBackgroundColor={changeBackgroundColor} />
+          <LanguageSelector />
           <Social selectedColor={selectedColor} />
         </div>
 

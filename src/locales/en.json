@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "education": "Education",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi! I'm",
+    "role": "Frontend Developer",
+    "description": "Passionate about creating amazing web experiences",
+    "projectsButton": "View Projects",
+    "aboutButton": "About Me"
+  },
+  "about": {
+    "title": "HELLO!",
+    "description": "I'm Cristian Castro, a software developer with experience in designing and developing functional and scalable digital solutions. I have worked on enterprise management systems, billing systems, electronic payments, custom reports, and robust websites. I specialize in technologies like React, JavaScript, and Node.js, and I use tools like Figma to create intuitive interfaces focused on user experience. Additionally, I have implemented AI automations and designed visual identities from scratch, combining technical and creative aspects to deliver complete and efficient solutions."
+  },
+  "skills": {
+    "title": "Skills",
+    "technologies": "Technologies",
+    "tools": "Tools"
+  },
+  "education": {
+    "title": "Education",
+    "certifications": "Certifications",
+    "description": "A skilled professional passionate about creating innovative technological solutions. My strong background in application analysis and development has given me a deep understanding of how to build efficient and robust systems. However, my approach goes beyond technical functionality: I combine my technical skills with a deep understanding of digital marketing and UX/UI design to deliver products that not only meet technical requirements but also captivate users and generate positive business results.",
+    "sena": {
+        "name": "Technologist Certification in Software Analysis and Development",
+        "bio": "I acquired strong skills in designing, creating, and maintaining computer applications. My training at SENA has prepared me to face challenges in the technological world.",
+        "fecha": "2024",
+        "ubication": "Bogotá DC"
+    },
+    "microsoft": {
+      "name": "Bachelor's degree in Computer Science",
+      "bio": "I acquired strong skills in designing, creating, and maintaining computer applications. My training at Microsoft has prepared me to face challenges in the technological world.",
+      "fecha": "2020",
+      "ubication": "Bogotá DC"
+    },
+    "linkedin": {
+      "name": "Bachelor's degree in Marketing",
+      "bio": "I acquired strong skills in designing, creating, and maintaining computer applications. My training at LinkedIn has prepared me to face challenges in the technological world.",
+      "fecha": "2018",
+      "ubication": "Bogotá DC"
+    },
+    "google": {
+      "name": "Google UX Design Professional Certificate",
+      "bio": "I learned the foundations of UX design, including ideation, wireframing, prototyping, and user research. I developed skills in using tools like Figma and Adobe XD to create user-centered designs.",
+      "fecha": "2023",
+      "ubication": "Online"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View Project",
+    "sourceCode": "Source Code"
+  },
+  "contact": {
+    "title": "Contact me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "success": "Message sent successfully!",
+    "error": "There was an error sending the message"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "theme": {
+    "purple": "Purple",
+    "green": "Green",
+    "terracotta": "Terracotta",
+    "ocean": "Ocean"
+  },
+  "language": {
+    "select": "Select language",
+    "es": "Spanish",
+    "en": "English"
+  }
+}

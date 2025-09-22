@@ -1,8 +1,8 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-scroll';
 import textImg from '../assets/text-img.webp';
 import ImgAbout from '../assets/about.webp';
+import { useTranslation } from 'react-i18next';
 
 /**
  * Props for the About component.
@@ -18,22 +18,7 @@ interface AboutProps {
  * @param {string} selectedColor - The background color class passed from the parent component.
  */
 const About: React.FC<AboutProps> = ({ selectedColor }) => {
-  const [backgroundClass, setBackgroundClass] = useState('bg-fondo2');
-
-  useEffect(() => {
-    // Updates the background class based on the selectedColor prop
-    switch (selectedColor) {
-      case 'bg-fondo3':
-        setBackgroundClass('bg-fondo3');
-        break;
-      case 'bg-fondo4':
-        setBackgroundClass('bg-fondo4');
-        break;
-      default:
-        setBackgroundClass('bg-fondo2');
-        break;
-    }
-  }, [selectedColor]);
+  const { t } = useTranslation();
 
   return (
     <div
@@ -50,25 +35,21 @@ const About: React.FC<AboutProps> = ({ selectedColor }) => {
             className='h-[400px] px-5 2xl:h-[770px] py-5 2xl:px-16 2xl:py-10'
           />
           <div
-            className={`absolute w-[220px] 2xl:w-[450px] 2xl:h-[600px] bottom-6 2xl:bottom-14 ${backgroundClass} -right-10 bg-fondo2 m-0 p-0`}
+            className={`absolute w-[220px] 2xl:w-[450px] 2xl:h-[600px] bottom-6 2xl:bottom-14 ${selectedColor} -right-10 m-0 p-0 transition-colors duration-300`}
           >
             <img src={ImgAbout} alt='Cristian Castro' width='auto' height='400px' />
           </div>
         </div>
       </div>
       <div className="md:col-span-3">
-        <h4 className="text-xl 2xl:text-3xl mb-4">¡HOLA!</h4>
+        <h4 className="text-xl 2xl:text-3xl mb-4">{t('about.title')}</h4>
         <p className="text-md font-light 2xl:text-lg">
-          Soy Cristian Castro, desarrollador de software con experiencia en el diseño y desarrollo de soluciones digitales funcionales y escalables. 
-          He trabajado en proyectos de sistemas de gestión empresarial, sistemas de facturación, pagos electrónicos, reportes personalizados y sitios web robustos. 
-          Me especializo en tecnologías como React, JavaScript y Node.js, y utilizo herramientas como Figma para crear interfaces intuitivas y enfocadas en la experiencia del usuario. 
-          Además, he implementado automatizaciones con inteligencia artificial y he diseñado identidades visuales desde cero, combinando 
-          lo técnico con lo creativo para ofrecer soluciones completas y eficientes.
+          {t('about.description')}
         </p>
         <Link to="contact" smooth={true} duration={900}>
           <button className="button 2xl:mt-28 2xl:w-52 hover:text-fondo animate-fade-down animate-once animate-delay-[3000ms] animate-ease-linear">
             <span className="relative z-10">
-              <a href="#contact" className="text-sm xl:text-xl">Contáctame</a>
+              <a href="#contact" className="text-sm xl:text-xl">{t('nav.contact')}</a>
             </span>
           </button>
         </Link>

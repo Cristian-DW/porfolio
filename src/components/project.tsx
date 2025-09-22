@@ -59,9 +59,9 @@ const Project = () => {
   return (
     <section id="project" className="w-full min-h-screen">
       {/* Main title */}
-      <h2 className='text-center mb-4 text-3xl 2xl:text-5xl'>Projects</h2>
+      <h2 className='text-center mb-4 text-3xl 2xl:text-5xl'>Proyectos</h2>
       {/* Subtitle */}
-      <p className='text-center text-md 2xl:text-xl'>Explore my wonderful world</p>
+      <p className='text-center text-md 2xl:text-xl'>Explora mi maravilloso mundo</p>
       {/* Projects carousel */}
       <Carousel className='w-full min-h-screen'>
         {/* Projects container */}
