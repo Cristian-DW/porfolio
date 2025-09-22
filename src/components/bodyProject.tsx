@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectsCard from './extras/cards';
+import ProjectsCard from './extras/Cards';
 
 /**
  * Props for the BodyProject component.

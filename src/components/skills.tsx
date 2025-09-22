@@ -1,6 +1,4 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
-
 import ImgSkill from "../assets/html.svg"
 import ImgSkill2 from "../assets/css.svg"
 import ImgSkill3 from "../assets/js.svg"
@@ -12,14 +10,17 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 
+interface SkillsProps {
+  selectedColor: string;
+}
+
 /**
  * Skills Component
  * Displays a carousel of skills using images and names.
  * Supports responsive layout and color customization.
- *
- * @param {string} selectedColor - The selected background color class.
  */
-const Skills = ({ selectedColor }) =>   {
+
+const Skills: React.FC<SkillsProps> = ({ selectedColor }) => {
 
     const [backgroundClass, setBackgroundClass] = useState('bg-fondo2');
   

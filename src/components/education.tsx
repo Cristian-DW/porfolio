@@ -6,6 +6,7 @@ import ImgGoogle from "../assets/google.png";
 import ImgSena from "../assets/sena.png"; 
 import ImgLinkedIn from "../assets/linke.png"
 
+
 /**
  * Education component.
  * This component displays educational background and certifications with popovers for detailed information.

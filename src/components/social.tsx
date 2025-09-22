@@ -1,12 +1,13 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Red1 from "../assets/bxl-github.svg"
 import Red2 from "../assets/bxl-gmail.svg"
 import Red3 from "../assets/bxl-linkedin.svg"
 
+interface SocialProps {
+  selectedColor: string;
+}
 
-
-const Social = ({ selectedColor }) => {
+const Social: React.FC<SocialProps> = ({ selectedColor }) => {
   const [backgroundClass, setBackgroundClass] = useState('bg-fondo2');
 
   useEffect(() => {

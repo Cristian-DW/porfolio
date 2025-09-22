@@ -1,12 +1,11 @@
 // "use client";
-import React from 'react';
 import '../App.css';
 import { Carousel } from "keep-react";
 import ProjectUno from '../assets/projectUno.webp'
 import ProjectDos from '../assets/project2.webp'
 import ProjectTres from '../assets/project-3.webp'
 import ProjectCuatro from '../assets/Project4.png'
-import ProjectsCard from './extras/cards';
+import ProjectsCard from './extras/Cards';
 
 /**
  * Project Component
