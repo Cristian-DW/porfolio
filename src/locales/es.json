@@ -26,7 +26,7 @@
     "title": "Educación",
     "certifications": "Certificaciones",
     "description": "Profesional capacitado y apasionado por la creación de soluciones tecnológicas innovadoras. Mi sólida formación en análisis y desarrollo de aplicaciones me ha brindado una comprensión profunda de cómo crear sistemas eficientes y robustos. Sin embargo, mi enfoque va más allá de la funcionalidad técnica: combino mis habilidades técnicas con un conocimiento profundo de marketing digital y diseño UX/UI para ofrecer productos que no solo cumplen con los requisitos técnicos, sino que también cautivan a los usuarios y generan resultados comerciales positivos.",
-    
+
     "sena": {
         "name": "Certificación tecnólogo en Análisis y Desarrollo de Software",
         "bio": "Adquirí habilidades sólidas en el diseño, creación y mantenimiento de aplicaciones informáticas. Mi formación en el SENA me ha preparado para enfrentar desafíos en el mundo tecnológico.",
@@ -54,6 +54,7 @@
   },
   "projects": {
     "title": "Proyectos",
+    "subtitle": "Explora mi maravilloso mundo",
     "viewProject": "Ver Proyecto",
     "sourceCode": "Código Fuente"
   },

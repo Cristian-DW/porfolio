@@ -53,6 +53,7 @@
   },
   "projects": {
     "title": "Projects",
+    "subtitle": "Explore my wonderful world",
     "viewProject": "View Project",
     "sourceCode": "Source Code"
   },

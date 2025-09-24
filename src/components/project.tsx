@@ -6,6 +6,7 @@ import ProjectDos from '../assets/project2.webp'
 import ProjectTres from '../assets/project-3.webp'
 import ProjectCuatro from '../assets/Project4.png'
 import ProjectsCard from './extras/Cards';
+import { useTranslation } from 'react-i18next';
 
 /**
  * Project Component
@@ -13,6 +14,7 @@ import ProjectsCard from './extras/Cards';
  * Each project includes a title, description, date, and associated links.
  */
 const Project = () => {
+  const { t } = useTranslation();
   /**
    * @param {string} title - The title of the project.
    * @param {string} description - A brief description of the project.
@@ -59,9 +61,9 @@ const Project = () => {
   return (
     <section id="project" className="w-full min-h-screen">
       {/* Main title */}
-      <h2 className='text-center mb-4 text-3xl 2xl:text-5xl'>Proyectos</h2>
+      <h2 className='text-center mb-4 text-3xl 2xl:text-5xl'>{t('projects.title')}</h2>
       {/* Subtitle */}
-      <p className='text-center text-md 2xl:text-xl'>Explora mi maravilloso mundo</p>
+      <p className='text-center text-md 2xl:text-xl'>{t('projects.subtitle')}</p>
       {/* Projects carousel */}
       <Carousel className='w-full min-h-screen'>
         {/* Projects container */}
