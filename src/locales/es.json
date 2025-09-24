@@ -60,15 +60,26 @@
   },
   "contact": {
     "title": "Contáctame",
-    "name": "Nombre",
-    "email": "Correo electrónico",
-    "message": "Mensaje",
-    "send": "Enviar",
+    "subtitle": "¿Tienes un problema por resolver?",
+    "description": "Cuéntame tus ideas para desarrollar el sitio web de tus sueños.",
+    "form": {
+      "name": {"label": "Nombre"},
+      "email": {"label": "Correo electrónico"},
+      "message": {"label": "Mensaje"},
+      "submit": "Enviar"
+    },
     "success": "¡Mensaje enviado con éxito!",
     "error": "Hubo un error al enviar el mensaje"
   },
   "footer": {
-    "rights": "Todos los derechos reservados"
+    "rights": "Todos los derechos reservados",
+    "sections": {
+      "about": "Conóceme",
+      "skill": "Habilidades",
+      "education": "Educación",
+      "project": "Proyectos",
+      "contact": "Contacto"
+    }
   },
   "theme": {
     "purple": "Morado",

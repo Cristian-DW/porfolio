@@ -59,15 +59,26 @@
   },
   "contact": {
     "title": "Contact me",
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
-    "send": "Send",
+    "subtitle": "Do you have a problem to solve?",
+    "description": "Tell me your ideas to develop the website of your dreams.",
+    "form": {
+      "name": {"label": "Name"},
+      "email": {"label": "Email"},
+      "message": {"label": "Message"},
+      "submit": "Send"
+    },
     "success": "Message sent successfully!",
     "error": "There was an error sending the message"
   },
   "footer": {
-    "rights": "All rights reserved"
+    "rights": "All rights reserved",
+    "sections": {
+      "about": "About",
+      "skill": "Skills",
+      "education": "Education",
+      "project": "Projects",
+      "contact": "Contact"
+    }
   },
   "theme": {
     "purple": "Purple",
