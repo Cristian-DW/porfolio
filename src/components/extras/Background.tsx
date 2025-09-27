@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react';
 
 interface BackgroundProps {
   selectedColor?: string;
+  className?: string; // 👈 añadimos esta prop
 }
 
-const Background: React.FC<BackgroundProps> = ({ selectedColor = 'bg-fondo2' }) => {
-  const [gradientColors, setGradientColors] = useState('from-temas-morado-start via-temas-morado-mid to-temas-morado-end');
+const Background: React.FC<BackgroundProps> = ({ selectedColor = 'bg-fondo2', className }) => {
+  const [gradientColors, setGradientColors] = useState(
+    'from-temas-morado-start via-temas-morado-mid to-temas-morado-end'
+  );
 
   useEffect(() => {
     switch (selectedColor) {
@@ -24,7 +27,9 @@ const Background: React.FC<BackgroundProps> = ({ selectedColor = 'bg-fondo2' }) 
   }, [selectedColor]);
 
   return (
-    <ul className={`background h-full w-full absolute top-0 left-0 bg-gradient-to-br ${gradientColors}`}>
+    <ul
+      className={`background h-full w-full absolute top-0 left-0 bg-gradient-to-br ${gradientColors} ${className || ''}`}
+    >
       {Array.from({ length: 5 }).map((_, index) => (
         <li key={index} className="backdrop-blur-sm"></li>
       ))}

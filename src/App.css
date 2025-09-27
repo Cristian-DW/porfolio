@@ -15,7 +15,7 @@
 }
 
 .button-hover{
-  @apply transition-transform  duration-500 transform hover:scale-90;
+  @apply transition-transform  duration-1000 transform hover:scale-90;
 }
 
 .title{
@@ -30,7 +30,7 @@
 }
 
 .button{
-  @apply  flex h-12 w-44 2xl:h-20 items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-24 hover:before:w-96;
+  @apply  flex h-12 w-44 2xl:h-12 items-center justify-center overflow-hidden bg-transparent border shadow-sm transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-[1200ms] before:ease-out hover:shadow-white hover:before:h-24 hover:before:w-96;
 }
 
 .hover-card{@apply transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out}

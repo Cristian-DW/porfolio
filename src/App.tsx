@@ -63,12 +63,9 @@ function App() {
         </div>
 
         {/* Scrollable Content */}
-        <div className="relative">
-          {/* Spacer to push content below hero */}
-          <div className="h-screen"></div>
-          
+
           {/* Main Content - slides over hero */}
-          <main className="relative z-30 bg-gradient-to-b from-transparent bg-fondo">
+          <main className="relative z-30 bg-gradient-to-b from-transparent bg-fondo mt-[100vh]">
             <About selectedColor={selectedColor} />
             <Skills selectedColor={selectedColor} />
             <Education/>
@@ -78,7 +75,6 @@ function App() {
           </main>
         </div>
       </div>
-    </div>
   );
 }
 
