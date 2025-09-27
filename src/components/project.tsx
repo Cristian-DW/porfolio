@@ -59,16 +59,11 @@ const Project = () => {
   ];
 
   return (
-    <section id="project" className="w-full min-h-screen">
-      {/* Main title */}
-      <h2 className='text-center mb-4 text-3xl 2xl:text-5xl'>{t('projects.title')}</h2>
-      {/* Subtitle */}
+    <section id="project" className="w-full min-h-screen ">
+      <h2 className='text-center pt-48 mb-4 text-3xl 2xl:text-5xl'>{t('projects.title')}</h2>
       <p className='text-center text-md 2xl:text-xl'>{t('projects.subtitle')}</p>
-      {/* Projects carousel */}
-      <Carousel className='w-full min-h-screen'>
-        {/* Projects container */}
+      <Carousel className='w-full  h-[70vh]'>
         <div className="flex flex-wrap justify-center items-center  mx-auto gap-12 p-5 rounded-xl 2xl:p-0  ">
-          {/* Mapping through each project */}
           {projects.map((project, index) => (
             <ProjectsCard
               key={index}

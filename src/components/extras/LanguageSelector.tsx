@@ -10,7 +10,7 @@ const LanguageSelector: React.FC = () => {
   };
 
   return (
-    <div className="fixed z-50 top-40 right-0 2xl:left-10 flex flex-col gap-3 p-2 bg-black/10 backdrop-blur-sm rounded-l-lg">
+    <div className=" 2xl:left-10 flex flex-row gap-3 rounded-l-lg">
       <button
         className={`w-8 h-8 2xl:w-10 2xl:h-10 rounded-full border-2 ${
           i18n.language === 'es' ? 'border-white' : 'border-white/20'

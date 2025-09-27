@@ -12,7 +12,7 @@ const themes = [
 
 const Theme: React.FC<ThemeProps> = ({ changeBackgroundColor }) => {
   return (
-    <div className="fixed z-50 bottom-5 right-0 2xl:left-10 flex flex-col gap-3 p-2">
+    <div className="fixed z-30 bottom-5 right-0 2xl:left-10 flex flex-col gap-3 p-2 w-10">
       {themes.map((theme) => (
         <button
           key={theme.color}

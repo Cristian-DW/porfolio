@@ -20,12 +20,10 @@ function Hero({ selectedColor = 'bg-fondo2' }: HeroProps) {
     >
       <Background selectedColor={selectedColor} className="pointer-events-none" />
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center justify-center pointer-events-auto">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white text-center mb-8 animate-fade-down animate-once animate-delay-[900ms] animate-ease-linear leading-tight">
-          {t('hero.greeting')}
-          <br />
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white text-center  animate-fade-down animate-once animate-delay-[900ms] animate-ease-linear leading-tight">
           {t('hero.role')}
         </h1>
-        <p className="text-xl text-white text-center mb-8 animate-fade-down animate-once animate-delay-[1000ms] animate-ease-linear">
+        <p className="text-xl text-white text-center mb-8 mt-8 animate-fade-down animate-once animate-delay-[1000ms] animate-ease-linear">
           {t('hero.description')}
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-8">
@@ -48,7 +46,15 @@ function Hero({ selectedColor = 'bg-fondo2' }: HeroProps) {
           </Link>
           <Link to="about" smooth={true} duration={900}>
             <button
-               className={`button 2xl:mt-0 2xl:w-40 text-white hover:${selectedColor.replace('bg-', 'text-')} duration-300 animate-fade-down animate-once animate-delay-[3000ms]  animate-ease-linear`}
+               className={clsx(
+                "button 2xl:mt-0 2xl:w-40 text-white transition-colors duration-300 animate-fade-down animate-once animate-delay-[3000ms] animate-ease-linear",
+                {
+                  "hover:text-fondo2": selectedColor === "bg-fondo2",
+                  "hover:text-fondo3": selectedColor === "bg-fondo3",
+                  "hover:text-fondo4": selectedColor === "bg-fondo4",
+                  "hover:text-fondo5": selectedColor === "bg-fondo5",
+                }
+              )}
             >
               <span className="relative z-10">
                 <a href="#about" className="text-sm xl:text-xl">{t('hero.aboutButton')}</a>

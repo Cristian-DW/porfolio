@@ -11,7 +11,6 @@ import Footer from './components/footer';
 import Logo from './assets/logo.svg';
 import './App.css';
 import Theme from './components/extras/Theme';
-import LanguageSelector from './components/extras/LanguageSelector';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -51,20 +50,12 @@ function App() {
         />
       </div>
       <div className="relative">
-        {/* Fixed Background Hero */}
         <Hero selectedColor={selectedColor} />
-        
-        {/* Navigation and Theme Controls - Always on top */}
         <div className="fixed top-0 left-0 w-full z-50">
           <Nav />
           <Theme changeBackgroundColor={changeBackgroundColor} />
-          <LanguageSelector />
           <Social selectedColor={selectedColor} />
         </div>
-
-        {/* Scrollable Content */}
-
-          {/* Main Content - slides over hero */}
           <main className="relative z-30 bg-gradient-to-b from-transparent bg-fondo mt-[100vh]">
             <About selectedColor={selectedColor} />
             <Skills selectedColor={selectedColor} />

@@ -3,6 +3,7 @@ import Logo from '../assets/logo.svg';
 import Menu from '../assets/menu.svg';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
+import LanguageSelector from './extras/LanguageSelector';
 
 /**
  * Nav component.
@@ -66,6 +67,7 @@ const Nav = () => {
                   <Link to="contact" smooth={true} duration={900} className="py-2 font-nav font-medium hover:border-b-2 button-hover cursor-pointer">
                     {t('nav.contact')}
                   </Link>
+                  <LanguageSelector />
                 </div>
               </div>
             </div>

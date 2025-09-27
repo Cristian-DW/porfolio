@@ -20,7 +20,7 @@ const Footer: React.FC<{ selectedColor: string }> = ({ selectedColor }) => {
           </a>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center 2xl:mb-8 space-x-3 2xl:space-x-10 text-white text-center">
+        <div className="flex flex-wrap justify-center items-center 2xl:mb-8 space-x-3 2xl:space-x-10 text-white text-center relative z-50">
           {sections.map((section, index) => (
             <Link
               key={index}
