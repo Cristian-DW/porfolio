@@ -27,9 +27,9 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 z-30 w-full border-b-2 backdrop-blur-lg animate-fade-down animate-once animate-ease-linear">
-        <div className="mx-auto max-w-8xl px-2 2xl:px-36">
-          <div className="flex h-16 items-center justify-between">
+      <nav className="fixed top-4 inset-x-0 mx-auto z-30 w-[70vw] max-w-[1400px] rounded-3xl border border-white/20  bg-white/10 backdrop-blur-xl shadow-lg animate-fade-down animate-once animate-ease-linear">
+        <div className="mx-auto max-w-7xl px-2">
+          <div className="flex h-14 items-center justify-between">
             <div className="absolute t-0 right-2 flex items-center 2xl:hidden">
               <button
                 type="button"
@@ -52,19 +52,19 @@ const Nav = () => {
               </div>
               <div className="hidden 2xl:ml-6 2xl:block">
                 <div className="flex space-x-8 text-white">
-                  <Link to="about" smooth={true} duration={900} className="py-2 font-nav font-medium hover:border-b-2 button-hover cursor-pointer">
+                  <Link to="about" smooth={true} duration={900} className="py-2 font-nav font-normal hover:border-b-2 button-hover cursor-pointer">
                     {t('nav.about')}
                   </Link>
-                  <Link to="skill" smooth={true} duration={900} offset={-420} className="py-2 font-nav font-medium hover:border-b-2 button-hover cursor-pointer">
+                  <Link to="skill" smooth={true} duration={900} offset={-420} className="py-2 font-nav font-normal hover:border-b-2 button-hover cursor-pointer">
                     {t('nav.skills')}
                   </Link>
-                  <Link to="education" smooth={true} duration={900} className="px-2 py-2 font-nav font-medium hover:border-b-2 button-hover cursor-pointer">
+                  <Link to="education" smooth={true} duration={900} className="px-2 py-2 font-nav font-normal hover:border-b-2 button-hover cursor-pointer">
                     {t('nav.education')}
                   </Link>
-                  <Link to="project" smooth={true} duration={900} offset={-100} className="py-2 font-nav font-medium hover:border-b-2 button-hover cursor-pointer">
+                  <Link to="project" smooth={true} duration={900} offset={-100} className="py-2 font-nav font-normal hover:border-b-2 button-hover cursor-pointer">
                     {t('nav.projects')}
                   </Link>
-                  <Link to="contact" smooth={true} duration={900} className="py-2 font-nav font-medium hover:border-b-2 button-hover cursor-pointer">
+                  <Link to="contact" smooth={true} duration={900} className="py-2 font-nav font-normal hover:border-b-2 button-hover cursor-pointer">
                     {t('nav.contact')}
                   </Link>
                   <LanguageSelector />

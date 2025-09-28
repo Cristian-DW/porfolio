@@ -10,9 +10,9 @@ const LanguageSelector: React.FC = () => {
   };
 
   return (
-    <div className=" 2xl:left-10 flex flex-row gap-3 rounded-l-lg">
+    <div className=" 2xl:left-10 flex flex-row gap-3 rounded-l-lg pt-2">
       <button
-        className={`w-8 h-8 2xl:w-10 2xl:h-10 rounded-full border-2 ${
+        className={`w-6 h-6 2xl:w-8 2xl:h-8 rounded-full border-2 ${
           i18n.language === 'es' ? 'border-white' : 'border-white/20'
         } hover:border-white/60 transition-all duration-300 shadow-lg hover:scale-110 active:scale-95 flex items-center justify-center font-bold text-white`}
         onClick={() => changeLanguage('es')}
@@ -22,7 +22,7 @@ const LanguageSelector: React.FC = () => {
         ES
       </button>
       <button
-        className={`w-8 h-8 2xl:w-10 2xl:h-10 rounded-full border-2 ${
+        className={`w-6 h-6 2xl:w-8 2xl:h-8 rounded-full border-2 ${
           i18n.language === 'en' ? 'border-white' : 'border-white/20'
         } hover:border-white/60 transition-all duration-300 shadow-lg hover:scale-110 active:scale-95 flex items-center justify-center font-bold text-white`}
         onClick={() => changeLanguage('en')}
