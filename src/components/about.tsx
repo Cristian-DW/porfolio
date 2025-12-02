@@ -29,7 +29,7 @@ const About: React.FC<AboutProps> = ({ selectedColor }) => {
           <div
             className={`absolute w-[220px] 2xl:w-[450px] 2xl:h-[600px] bottom-6 2xl:bottom-14 ${selectedColor} -right-10 m-0 p-0 transition-colors duration-300`}
           >
-            <img src={ImgAbout} alt='Cristian Castro' width='auto' height='400px' />
+            <img src={ImgAbout} alt='Cristian Castro' width='auto' height='400px' loading="lazy" />
           </div>
         </div>
       </div>
