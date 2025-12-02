@@ -11,6 +11,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@excalidraw/excalidraw": "^0.18.0",
     "@material-tailwind/react": "^2.1.1",
     "i18next": "^25.5.2",
