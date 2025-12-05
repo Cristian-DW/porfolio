@@ -1,6 +1,8 @@
 // "use client";
 import '../App.css';
-import { Carousel } from "keep-react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import ProjectUno from '../assets/projectUno.webp'
 import ProjectDos from '../assets/project2.webp'
 import ProjectTres from '../assets/project-3.webp'
@@ -15,6 +17,34 @@ import { useTranslation } from 'react-i18next';
  */
 const Project = () => {
   const { t } = useTranslation();
+
+  const sliderSettings = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+    autoplay: false,
+    pauseOnHover: true,
+  };
+
   /**
    * @param {string} title - The title of the project.
    * @param {string} description - A brief description of the project.
@@ -91,24 +121,25 @@ const Project = () => {
   ];
 
   return (
-    <section id="project" className="w-full min-h-screen ">
-      <h2 className='text-center pt-36 mb-4 text-3xl 2xl:text-5xl'>{t('projects.title')}</h2>
-      <p className='text-center text-md 2xl:text-xl'>{t('projects.subtitle')}</p>
-      <Carousel className='w-full  h-[70vh]'>
-        <div className="flex flex-wrap justify-center items-center  mx-auto gap-12 p-5 rounded-xl 2xl:p-0  ">
+    <section id="project" className="w-full min-h-screen flex flex-col justify-center items-center py-20 px-8">
+      <h2 className='text-center mb-4 text-3xl 2xl:text-5xl'>{t('projects.title')}</h2>
+      <p className='text-center text-md 2xl:text-xl mb-12'>{t('projects.subtitle')}</p>
+      <div className="w-full max-w-7xl">
+        <Slider {...sliderSettings}>
           {projects.map((project, index) => (
-            <ProjectsCard
-              key={index}
-              title={project.title}
-              description={project.description}
-              fecha={project.fecha}
-              backgroundImage={project.backgroundImage}
-              link={project.link}
-              link2={project.link2}
-            />
+            <div key={index} className="px-4">
+              <ProjectsCard
+                title={project.title}
+                description={project.description}
+                fecha={project.fecha}
+                backgroundImage={project.backgroundImage}
+                link={project.link}
+                link2={project.link2}
+              />
+            </div>
           ))}
-        </div>
-      </Carousel>
+        </Slider>
+      </div>
     </section>
   );
 };
