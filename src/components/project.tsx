@@ -121,9 +121,9 @@ const Project = () => {
   ];
 
   return (
-    <section id="project" className="w-full min-h-screen flex flex-col justify-center items-center py-20 px-8">
-      <h2 className='text-center mb-4 text-3xl 2xl:text-5xl'>{t('projects.title')}</h2>
-      <p className='text-center text-md 2xl:text-xl mb-12'>{t('projects.subtitle')}</p>
+    <section id="project" className="w-full min-h-screen flex flex-col justify-center items-center py-32 px-8">
+      <h2 className='text-center mb-6 text-4xl 2xl:text-6xl'>{t('projects.title')}</h2>
+      <p className='text-center text-lg 2xl:text-2xl mb-16'>{t('projects.subtitle')}</p>
       <div className="w-full max-w-7xl">
         <Slider {...sliderSettings}>
           {projects.map((project, index) => (
