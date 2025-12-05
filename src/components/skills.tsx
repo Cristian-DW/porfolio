@@ -45,7 +45,7 @@ const Skills: React.FC<SkillsProps> = ({ selectedColor }) => {
 
   return (
 
-    <div id='skill' className={`h-32 ${selectedColor} md:mt-44 2xl:h-72 flex flex-col justify-center items-center transition-colors duration-300`}>
+    <div id='skill' className={`min-h-screen ${selectedColor} flex flex-col justify-center items-center py-20 transition-colors duration-300`}>
       <div className='w-1/2 h-40  flex justify-center items-center'>
         <Slider {...settings} className='w-full '>
           <div className="flex justify-center items-center h-full ml-3  md:ml-14">

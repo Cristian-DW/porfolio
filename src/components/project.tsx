@@ -4,7 +4,6 @@ import { Carousel } from "keep-react";
 import ProjectUno from '../assets/projectUno.webp'
 import ProjectDos from '../assets/project2.webp'
 import ProjectTres from '../assets/project-3.webp'
-import ProjectCuatro from '../assets/Project4.png'
 import MaintenanceManager from '../assets/maintenanceManager.png'
 import ProjectsCard from './extras/Cards';
 import { useTranslation } from 'react-i18next';
@@ -50,20 +49,44 @@ const Project = () => {
       link: "https://cristian-dw.github.io/todoList/",
     },
     {
-      title: "Weather App",
-      description: "App",
-      fecha: "July 2023",
-      backgroundImage: ProjectCuatro,
-      link2: "https://github.com/Cristian-DW/weather-app",
-      link: "https://cristian-dw.github.io/weather-app/",
-    },
-    {
       title: "Maintenance Manager",
       description: "Web App",
       fecha: "December 2024",
       backgroundImage: MaintenanceManager,
       link2: "https://github.com/Cristian-DW/maintenance-manager",
       link: "https://github.com/Cristian-DW/maintenance-manager",
+    },
+    {
+      title: "E-commerce Platform",
+      description: "Web App",
+      fecha: "September 2023",
+      backgroundImage: ProjectDos,
+      link2: "https://github.com/Cristian-DW",
+      link: "https://github.com/Cristian-DW",
+    },
+    {
+      title: "Task Manager Pro",
+      description: "App",
+      fecha: "June 2024",
+      backgroundImage: ProjectUno,
+      link2: "https://github.com/Cristian-DW",
+      link: "https://github.com/Cristian-DW",
+    },
+    {
+      title: "Social Dashboard",
+      description: "Web App",
+      fecha: "August 2024",
+      backgroundImage: ProjectTres,
+      link2: "https://github.com/Cristian-DW",
+      link: "https://github.com/Cristian-DW",
+    },
+    {
+      title: "Portfolio CMS",
+      description: "Website",
+      fecha: "October 2024",
+      backgroundImage: MaintenanceManager,
+      link2: "https://github.com/Cristian-DW",
+      link: "https://github.com/Cristian-DW",
     },
   ];
 
