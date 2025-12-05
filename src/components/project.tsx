@@ -5,6 +5,7 @@ import ProjectUno from '../assets/projectUno.webp'
 import ProjectDos from '../assets/project2.webp'
 import ProjectTres from '../assets/project-3.webp'
 import ProjectCuatro from '../assets/Project4.png'
+import MaintenanceManager from '../assets/maintenanceManager.png'
 import ProjectsCard from './extras/Cards';
 import { useTranslation } from 'react-i18next';
 
@@ -55,6 +56,14 @@ const Project = () => {
       backgroundImage: ProjectCuatro,
       link2: "https://github.com/Cristian-DW/weather-app",
       link: "https://cristian-dw.github.io/weather-app/",
+    },
+    {
+      title: "Maintenance Manager",
+      description: "Web App",
+      fecha: "December 2024",
+      backgroundImage: MaintenanceManager,
+      link2: "https://github.com/Cristian-DW/maintenance-manager",
+      link: "https://github.com/Cristian-DW/maintenance-manager",
     },
   ];
 
