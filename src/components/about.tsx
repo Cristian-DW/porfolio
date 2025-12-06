@@ -26,7 +26,7 @@ const About: React.FC<AboutProps> = ({ selectedColor }) => {
     >
       <div className="md:grid grid-cols-5 gap-10 w-full max-w-screen-2xl">
         <div className="md:col-span-2 md:block xxl:flex justify-center">
-          <div className='relative w-[250px] h-[400px] mb-[30px] 2xl:pb-0 2xl:w-[560px] 2xl:h-[792px] bg-black'>
+          <div className='relative w-[300px] h-[400px] mb-[30px] 2xl:pb-0 2xl:w-[460px] 2xl:h-[592px] bg-black'>
             <div
               className={`absolute w-[220px] 2xl:w-[450px] 2xl:h-[600px] bottom-6 2xl:bottom-14 ${selectedColor} -right-10 m-0 p-0 transition-colors duration-300`}
             >

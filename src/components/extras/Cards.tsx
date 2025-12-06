@@ -15,39 +15,66 @@ interface ProjectsCardProps {
 const ProjectsCard: React.FC<ProjectsCardProps> = ({
   title,
   description,
-  fecha,
   backgroundImage,
   link,
   link2
 }) => {
   return (
-    <div className="relative w-72 h-96 md:w-80 md:h-[28rem] 2xl:w-96 2xl:h-[32rem] shadow-md overflow-hidden transform transition-transform hover:scale-105 duration-1000 ease-in-out">
+    <div className="group relative w-72 h-96 md:w-80 md:h-[28rem] 2xl:w-96 2xl:h-[32rem] rounded-2xl overflow-hidden transform transition-all duration-700 hover:scale-105 hover:rotate-1">
+      {/* Background Image */}
       <div
-        className="absolute inset-0 bg-center opacity-80 transform transition-transform bg-cover hover:scale-105 duration-1000 ease-in-out"
+        className="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-110"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       ></div>
-      <div className="absolute inset-0 bg-opacity-70 bg-black flex flex-col justify-center items-center text-white transform transition-opacity opacity-0 hover:opacity-100 duration-1000 ease-in-out">
-        <h3 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold uppercase my-3 2xl:my-5">
-          {title}
-        </h3>
-        <p className="text-white font-light text-lg md:text-xl 2xl:text-2xl">{description}</p>
-        <p className="text-white font-light text-base md:text-lg 2xl:text-xl mt-2">{fecha}</p>
-        <div className="flex flex-col gap-y-4 mt-8 2xl:mt-12">
-          <button className="py-2 px-6 button hover:text-fondo w-40 h-11 2xl:w-48 2xl:h-12 flex items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-11 hover:before:w-40 2xl:hover:before:h-12 2xl:hover:before:w-48">
-            <span className="relative z-10 text-sm 2xl:text-lg">
-              <a href={link2} target="_blank" rel="noreferrer">GitHub</a>
-            </span>
-          </button>
-          <button className="py-2 px-6 button hover:text-fondo w-40 h-11 2xl:w-48 2xl:h-12 flex items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-11 hover:before:w-40 2xl:hover:before:h-12 2xl:hover:before:w-48">
-            <span className="relative z-10 text-sm 2xl:text-lg">
-              <a href={link} target="_blank" rel="noreferrer">view Project</a>
-            </span>
-          </button>
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-700"></div>
+
+      {/* Glassmorphism Border */}
+      <div className="absolute inset-0 rounded-2xl border border-white/10 group-hover:border-fondo2/50 transition-colors duration-700"></div>
+
+      {/* Hover Glow Effect */}
+      <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 shadow-2xl shadow-fondo2/20"></div>
+
+      {/* Content */}
+      <div className="absolute inset-0 p-6 flex flex-col justify-end text-white">
+        {/* Tech Stack Icons - Top Left */}
+        <div className="absolute top-4 left-4 flex gap-x-2 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
+          <div className="w-8 h-8 2xl:w-10 2xl:h-10 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 p-1.5 flex items-center justify-center">
+            <img src={tecnology1} alt="html" className="w-full h-full" />
+          </div>
+          <div className="w-8 h-8 2xl:w-10 2xl:h-10 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 p-1.5 flex items-center justify-center">
+            <img src={tecnology2} alt="css" className="w-full h-full" />
+          </div>
+          <div className="w-8 h-8 2xl:w-10 2xl:h-10 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 p-1.5 flex items-center justify-center">
+            <img src={tecnology3} alt="javascript" className="w-full h-full" />
+          </div>
         </div>
-        <div className="absolute top-3 left-3 flex gap-x-2">
-          <img width={24} height={24} className="2xl:w-8 2xl:h-8" src={tecnology1} alt="html" />
-          <img width={24} height={24} className="2xl:w-8 2xl:h-8" src={tecnology2} alt="css" />
-          <img width={24} height={24} className="2xl:w-8 2xl:h-8" src={tecnology3} alt="javascript" />
+
+        {/* Project Info */}
+        <div className="transform transition-all duration-500 translate-y-4 group-hover:translate-y-0">
+          <h3 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold uppercase mb-3">
+            {title}
+          </h3>
+          <p className="text-gray-300 text-sm md:text-base 2xl:text-lg mb-6">{description}</p>
+
+          {/* Buttons - Hidden by default, shown on hover */}
+          <div className="flex flex-col gap-y-3 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+            <a href={link2} target="_blank" rel="noreferrer">
+              <button className="button-hover hover:text-lg w-full h-11 2xl:h-12">
+                <span className="relative z-10 text-sm 2xl:text-base">
+                  GitHub
+                </span>
+              </button>
+            </a>
+            <a href={link} target="_blank" rel="noreferrer">
+              <button className="button-hover hover:text-lg w-full h-11 2xl:h-12">
+                <span className="relative z-10 text-sm 2xl:text-base">
+                  View Project
+                </span>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

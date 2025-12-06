@@ -10,36 +10,39 @@
 
 
 
-.font-nav{
+.font-nav {
   @apply text-xl;
 }
 
-.button-hover{
-  @apply transition-transform  duration-1000 transform hover:scale-90;
+.button-hover {
+  @apply transition-transform duration-1000 transform hover:scale-90 flex h-12 w-44 2xl:h-12 items-center justify-center overflow-hidden bg-transparent border shadow-sm;
 }
 
-.title{
-  @apply text-[2.4rem]  mb-12  md:text-[5rem] text-center 2xl:text-left  2xl:text-[11rem] xxl:text-[13rem];
-}
-.word{
-  @apply text-3xl mb-20 sm:text-lg md:text-lg 2xl:text-3xl xl:text-5xl  ;
+.title {
+  @apply text-[2.4rem] mb-12 md:text-[5rem] text-center 2xl:text-left 2xl:text-[11rem] xxl:text-[13rem];
 }
 
-.subtitle{
+.word {
+  @apply text-3xl mb-20 sm:text-lg md:text-lg 2xl:text-3xl xl:text-5xl;
+}
+
+.subtitle {
   @apply text-3xl 2xl:text-5xl mb-4 2xl:mb-10;
 }
 
-.button{
-  @apply  flex h-12 w-44 2xl:h-12 items-center justify-center overflow-hidden bg-transparent border shadow-sm transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-[1200ms] before:ease-out hover:shadow-white hover:before:h-24 hover:before:w-96;
+.button {
+  @apply flex h-12 w-44 2xl:h-12 items-center justify-center overflow-hidden bg-transparent border shadow-sm transition-all before:absolute before:h-0 before:w-0 before:bg-white before:text-opacity-10 before:duration-700 before:ease-out hover:shadow-white hover:before:h-56 hover:before:w-56;
 }
 
-.hover-card{@apply transition-all before:absolute before:h-0 before:w-0 before:bg-white  before:text-opacity-10 before:duration-500 before:ease-out}
+.hover-card {
+  @apply transition-all before:absolute before:h-0 before:w-0 before:bg-white before:text-opacity-10 before:duration-500 before:ease-out
+}
 
-.header{
+.header {
   @apply w-screen h-screen;
 }
 
-.tit{
+.tit {
   font-family: 'Vast Shadow';
 }
 
@@ -47,8 +50,8 @@
 /* //barra de desplazamiento */
 
 ::-webkit-scrollbar {
-  width: 0vw; 
-  background-color: #060918; 
+  width: 0vw;
+  background-color: #060918;
 }
 
 
@@ -72,20 +75,22 @@
 }
 
 @keyframes animate {
-  0%{
-      transform: translateY(10px) rotate(0deg);
-      opacity: 1;
-      border-radius: 0;
+  0% {
+    transform: translateY(10px) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
   }
-  100%{
-      transform: translateY(-1000px) rotate(720deg);
-      opacity: 0;
-      border-radius: 50%;
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
   }
 }
-.background{
-   @apply fixed w-screen h-screen top-0 left-0 m-0 p-0 overflow-hidden;
-   transition: background-color 0.5s ease-in-out;
+
+.background {
+  @apply fixed w-screen h-screen top-0 left-0 m-0 p-0 overflow-hidden;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .background li {
@@ -107,6 +112,7 @@
   bottom: -96px;
   animation-delay: 0.2s;
 }
+
 .background li:nth-child(1) {
   left: 59%;
   width: 194px;
@@ -114,6 +120,7 @@
   bottom: -194px;
   animation-delay: 0.1s;
 }
+
 .background li:nth-child(2) {
   left: 1%;
   width: 186px;
@@ -121,6 +128,7 @@
   bottom: -186px;
   animation-delay: 5s;
 }
+
 .background li:nth-child(3) {
   left: 46%;
   width: 224px;
@@ -128,6 +136,7 @@
   bottom: -224px;
   animation-delay: 10s;
 }
+
 .background li:nth-child(4) {
   left: 86%;
   width: 216px;
@@ -135,6 +144,7 @@
   bottom: -216px;
   animation-delay: 15s;
 }
+
 .background li:nth-child(5) {
   left: 16%;
   width: 216px;
@@ -157,6 +167,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -173,6 +184,7 @@
     opacity: 1;
     transform: translateY(0);
   }
+
   to {
     opacity: 0;
     transform: translateY(-10px);
@@ -193,14 +205,96 @@
   align-items: center;
   font-size: 24px;
   z-index: 9999;
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 0.8s ease-in-out;
 }
 
 .loading-active {
-  opacity: 1; 
+  opacity: 1;
 }
 
-.loading-inactive{
+.loading-inactive {
   display: none;
+}
+
+/* Projects Slider Custom Styling */
+.projects-slider .slick-slider {
+  position: relative;
+  padding: 20px 0;
+}
+
+.projects-slider .slick-arrow {
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  border-radius: 50%;
+  background: rgba(76, 29, 149, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.projects-slider .slick-arrow:hover {
+  background: rgba(76, 29, 149, 0.8);
+  border-color: rgba(76, 29, 149, 0.5);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(76, 29, 149, 0.5);
+}
+
+.projects-slider .slick-arrow:before {
+  font-size: 24px;
+  opacity: 1;
+}
+
+.projects-slider .slick-prev {
+  left: -60px;
+}
+
+.projects-slider .slick-next {
+  right: -60px;
+}
+
+.projects-slider .slick-dots {
+  bottom: -40px;
+}
+
+.projects-slider .slick-dots li button:before {
+  font-size: 12px;
+  color: rgba(76, 29, 149, 0.5);
+  opacity: 1;
+}
+
+.projects-slider .slick-dots li.slick-active button:before {
+  color: #4C1D95;
+  opacity: 1;
+}
+
+.projects-slider .slick-slide {
+  padding: 0 12px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .projects-slider .slick-prev {
+    left: -40px;
+  }
+
+  .projects-slider .slick-next {
+    right: -40px;
+  }
+
+  .projects-slider .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-slider .slick-prev {
+    left: 10px;
+  }
+
+  .projects-slider .slick-next {
+    right: 10px;
+  }
 }

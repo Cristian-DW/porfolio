@@ -121,10 +121,29 @@ const Project = () => {
   ];
 
   return (
-    <section id="project" className="w-full min-h-screen flex flex-col justify-center items-center py-32 px-8">
-      <h2 className='text-center mb-6 text-4xl 2xl:text-6xl'>{t('projects.title')}</h2>
-      <p className='text-center text-lg 2xl:text-2xl mb-16'>{t('projects.subtitle')}</p>
-      <div className="w-full max-w-7xl">
+    <section id="project" className="relative w-full min-h-screen flex flex-col justify-center items-center py-32 px-8 overflow-hidden">
+      {/* Decorative background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-fondo via-fondo to-fondo2/10 -z-10"></div>
+
+      {/* Decorative circles */}
+      <div className="absolute top-20 right-10 w-64 h-64 bg-fondo2/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute bottom-20 left-10 w-80 h-80 bg-fondo3/5 rounded-full blur-3xl -z-10"></div>
+
+      {/* Header */}
+      <div className="text-center mb-16 relative z-10">
+        <p className="text-fondo2 text-sm md:text-base 2xl:text-lg uppercase tracking-widest mb-4 font-light">
+          Portfolio
+        </p>
+        <h2 className='text-center mb-4 text-3xl md:text-4xl 2xl:text-5xl text-white'>
+          {t('projects.title')}
+        </h2>
+        <p className='text-center text-lg 2xl:text-2xl text-gray-300 max-w-2xl mx-auto'>
+          {t('projects.subtitle')}
+        </p>
+      </div>
+
+      {/* Projects Slider */}
+      <div className="w-full max-w-7xl relative projects-slider">
         <Slider {...sliderSettings}>
           {projects.map((project, index) => (
             <div key={index} className="px-4">
