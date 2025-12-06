@@ -59,16 +59,16 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
           <p className="text-gray-300 text-sm md:text-base 2xl:text-lg mb-6">{description}</p>
 
           {/* Buttons - Hidden by default, shown on hover */}
-          <div className="flex flex-col gap-y-3 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+          <div className="flex flex-col gap-y-3 items-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
             <a href={link2} target="_blank" rel="noreferrer">
-              <button className="button-hover hover:text-lg w-full h-11 2xl:h-12">
+              <button className="transition-transform duration-1000 transform hover:scale-90 flex h-12 w-44 2xl:h-12 items-center justify-center overflow-hidden bg-transparent border shadow-sm;hover:text-lg">
                 <span className="relative z-10 text-sm 2xl:text-base">
                   GitHub
                 </span>
               </button>
             </a>
             <a href={link} target="_blank" rel="noreferrer">
-              <button className="button-hover hover:text-lg w-full h-11 2xl:h-12">
+              <button className="transition-transform duration-1000 transform hover:scale-90 flex h-12 w-44 2xl:h-14 items-center justify-center overflow-hidden bg-transparent border shadow-sm hover:text-lg">
                 <span className="relative z-10 text-sm 2xl:text-base">
                   View Project
                 </span>

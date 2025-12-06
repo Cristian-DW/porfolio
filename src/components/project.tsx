@@ -86,38 +86,6 @@ const Project = () => {
       link2: "https://github.com/Cristian-DW/maintenance-manager",
       link: "https://github.com/Cristian-DW/maintenance-manager",
     },
-    {
-      title: "E-commerce Platform",
-      description: "Web App",
-      fecha: "September 2023",
-      backgroundImage: ProjectDos,
-      link2: "https://github.com/Cristian-DW",
-      link: "https://github.com/Cristian-DW",
-    },
-    {
-      title: "Task Manager Pro",
-      description: "App",
-      fecha: "June 2024",
-      backgroundImage: ProjectUno,
-      link2: "https://github.com/Cristian-DW",
-      link: "https://github.com/Cristian-DW",
-    },
-    {
-      title: "Social Dashboard",
-      description: "Web App",
-      fecha: "August 2024",
-      backgroundImage: ProjectTres,
-      link2: "https://github.com/Cristian-DW",
-      link: "https://github.com/Cristian-DW",
-    },
-    {
-      title: "Portfolio CMS",
-      description: "Website",
-      fecha: "October 2024",
-      backgroundImage: MaintenanceManager,
-      link2: "https://github.com/Cristian-DW",
-      link: "https://github.com/Cristian-DW",
-    },
   ];
 
   return (

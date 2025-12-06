@@ -15,7 +15,7 @@
 }
 
 .button-hover {
-  @apply transition-transform duration-1000 transform hover:scale-90 flex h-12 w-44 2xl:h-12 items-center justify-center overflow-hidden bg-transparent border shadow-sm;
+  @apply transition-transform duration-1000 transform hover:scale-90;
 }
 
 .title {
