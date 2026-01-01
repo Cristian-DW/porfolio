@@ -7,6 +7,7 @@ import ProjectUno from '../assets/projectUno.webp'
 import ProjectDos from '../assets/project2.webp'
 import ProjectTres from '../assets/project-3.webp'
 import MaintenanceManager from '../assets/maintenanceManager.png'
+import MyLumina from '../assets/mylumina.png'
 import ProjectsCard from './extras/Cards';
 import { useTranslation } from 'react-i18next';
 
@@ -85,6 +86,14 @@ const Project = () => {
       backgroundImage: MaintenanceManager,
       link2: "https://github.com/Cristian-DW/maintenance-manager",
       link: "https://github.com/Cristian-DW/maintenance-manager",
+    },
+    {
+      title: "MyLumina",
+      description: "Social Media Platform",
+      fecha: "January 2026",
+      backgroundImage: MyLumina,
+      link2: "https://github.com/Cristian-DW/mylumina",
+      link: "https://mylumina.vercel.app/",
     },
   ];
 
