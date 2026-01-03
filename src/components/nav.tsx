@@ -27,7 +27,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="fixed top-4 inset-x-0 mx-auto z-30 w-[70vw] max-w-[1400px] rounded-3xl border border-white/20  bg-white/10 backdrop-blur-xl shadow-lg animate-fade-down animate-once animate-ease-linear">
+      <nav className="fixed top-4 inset-x-0 mx-auto z-30 w-[70vw] max-w-[1400px] rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-lg animate-fade-down animate-once animate-ease-linear">
         <div className="mx-auto max-w-7xl px-2">
           <div className="flex h-14 items-center justify-between">
             <div className="absolute t-0 right-2 flex items-center 2xl:hidden">
@@ -38,7 +38,7 @@ const Nav = () => {
                 aria-controls="mobile-menu"
                 aria-expanded={isMobileMenuOpen}
               >
-                <img width="30px" height="30px" src={Menu} alt="menu"/>
+                <img width="30px" height="30px" src={Menu} alt="menu" />
               </button>
             </div>
             <div className="flex flex-1 items-center 2xl:items-stretch 2xl:justify-between">
@@ -52,19 +52,19 @@ const Nav = () => {
               </div>
               <div className="hidden 2xl:ml-6 2xl:block">
                 <div className="flex space-x-8 text-white">
-                  <Link to="about" smooth={true} duration={900} className="py-2 font-nav font-normal hover:border-b-2 button-hover cursor-pointer">
+                  <Link to="about" smooth={true} duration={900} className="py-2 font-nav font-normal nav-link cursor-pointer">
                     {t('nav.about')}
                   </Link>
-                  <Link to="skill" smooth={true} duration={900} offset={-420} className="py-2 font-nav font-normal hover:border-b-2 button-hover cursor-pointer">
+                  <Link to="skill" smooth={true} duration={900} offset={-420} className="py-2 font-nav font-normal nav-link cursor-pointer">
                     {t('nav.skills')}
                   </Link>
-                  <Link to="education" smooth={true} duration={900} className="px-2 py-2 font-nav font-normal hover:border-b-2 button-hover cursor-pointer">
+                  <Link to="education" smooth={true} duration={900} className="px-2 py-2 font-nav font-normal nav-link cursor-pointer">
                     {t('nav.education')}
                   </Link>
-                  <Link to="project" smooth={true} duration={900} offset={-100} className="py-2 font-nav font-normal hover:border-b-2 button-hover cursor-pointer">
+                  <Link to="project" smooth={true} duration={900} offset={-100} className="py-2 font-nav font-normal nav-link cursor-pointer">
                     {t('nav.projects')}
                   </Link>
-                  <Link to="contact" smooth={true} duration={900} className="py-2 font-nav font-normal hover:border-b-2 button-hover cursor-pointer">
+                  <Link to="contact" smooth={true} duration={900} className="py-2 font-nav font-normal nav-link cursor-pointer">
                     {t('nav.contact')}
                   </Link>
                   <LanguageSelector />

@@ -18,6 +18,26 @@
   @apply transition-transform duration-1000 transform hover:scale-90;
 }
 
+.nav-link {
+  @apply relative transition-all duration-300;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #c084fc, #f9a8d4, #a855f7);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
 .title {
   @apply text-[2.4rem] mb-12 md:text-[5rem] text-center 2xl:text-left 2xl:text-[11rem] xxl:text-[13rem];
 }
