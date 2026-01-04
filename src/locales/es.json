@@ -18,19 +18,24 @@
   },
   "skills": {
     "title": "Habilidades",
-    "technologies": "Tecnologías",
-    "tools": "Herramientas"
+    "frontend": "Frontend",
+    "backend": "Backend & Cloud",
+    "others": "Otras Habilidades",
+    "sap_cap": "SAP CAP",
+    "sap_btp": "SAP BTP (Cloud Foundry / servicios administrados)",
+    "apis": "SOAP / REST APIs",
+    "sql": "SQL, PL/SQL",
+    "microservices": "Arquitecturas de microservicios"
   },
   "education": {
     "title": "Educación",
     "certifications": "Certificaciones",
     "description": "Profesional capacitado y apasionado por la creación de soluciones tecnológicas innovadoras. Mi sólida formación en análisis y desarrollo de aplicaciones me ha brindado una comprensión profunda de cómo crear sistemas eficientes y robustos. Sin embargo, mi enfoque va más allá de la funcionalidad técnica: combino mis habilidades técnicas con un conocimiento profundo de marketing digital y diseño UX/UI para ofrecer productos que no solo cumplen con los requisitos técnicos, sino que también cautivan a los usuarios y generan resultados comerciales positivos.",
-
     "sena": {
-        "name": "Certificación tecnólogo en Análisis y Desarrollo de Software",
-        "bio": "Adquirí habilidades sólidas en el diseño, creación y mantenimiento de aplicaciones informáticas. Mi formación en el SENA me ha preparado para enfrentar desafíos en el mundo tecnológico.",
-        "fecha": "2024",
-        "ubication": "Bogotá DC"
+      "name": "Certificación tecnólogo en Análisis y Desarrollo de Software",
+      "bio": "Adquirí habilidades sólidas en el diseño, creación y mantenimiento de aplicaciones informáticas. Mi formación en el SENA me ha preparado para enfrentar desafíos en el mundo tecnológico.",
+      "fecha": "2024",
+      "ubication": "Bogotá DC"
     },
     "microsoft": {
       "name": "Título profesional en Ingeniería de Sistemas",
@@ -43,7 +48,7 @@
       "bio": "Adquirí habilidades sólidas en el diseño, creación y mantenimiento de aplicaciones informáticas. Mi formación en LinkedIn me ha preparado para enfrentar desafíos en el mundo tecnológico.",
       "fecha": "2020",
       "ubication": "Bogotá DC"
-    },         
+    },
     "google": {
       "name": "Certificación profesional de Google en Diseño UX",
       "bio": "Aprendí los fundamentos del diseño UX, incluyendo ideación, creación de wireframes, prototipos e investigación de usuarios. Desarrollé habilidades en el uso de herramientas como Figma y Adobe XD para crear diseños centrados en el usuario.",
@@ -62,9 +67,15 @@
     "subtitle": "¿Tienes un problema por resolver?",
     "description": "Cuéntame tus ideas para desarrollar el sitio web de tus sueños.",
     "form": {
-      "name": {"label": "Nombre"},
-      "email": {"label": "Correo electrónico"},
-      "message": {"label": "Mensaje"},
+      "name": {
+        "label": "Nombre"
+      },
+      "email": {
+        "label": "Correo electrónico"
+      },
+      "message": {
+        "label": "Mensaje"
+      },
       "submit": "Enviar"
     },
     "success": "¡Mensaje enviado con éxito!",

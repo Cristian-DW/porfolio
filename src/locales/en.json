@@ -18,18 +18,24 @@
   },
   "skills": {
     "title": "Skills",
-    "technologies": "Technologies",
-    "tools": "Tools"
+    "frontend": "Frontend",
+    "backend": "Backend & Cloud",
+    "others": "Other Skills",
+    "sap_cap": "SAP CAP",
+    "sap_btp": "SAP BTP (Cloud Foundry / managed services)",
+    "apis": "SOAP / REST APIs",
+    "sql": "SQL, PL/SQL",
+    "microservices": "Microservices architectures"
   },
   "education": {
     "title": "Education",
     "certifications": "Certifications",
     "description": "A skilled professional passionate about creating innovative technological solutions. My strong background in application analysis and development has given me a deep understanding of how to build efficient and robust systems. However, my approach goes beyond technical functionality: I combine my technical skills with a deep understanding of digital marketing and UX/UI design to deliver products that not only meet technical requirements but also captivate users and generate positive business results.",
     "sena": {
-        "name": "Technologist Certification in Software Analysis and Development",
-        "bio": "I acquired strong skills in designing, creating, and maintaining computer applications. My training at SENA has prepared me to face challenges in the technological world.",
-        "fecha": "2024",
-        "ubication": "Bogotá DC"
+      "name": "Technologist Certification in Software Analysis and Development",
+      "bio": "I acquired strong skills in designing, creating, and maintaining computer applications. My training at SENA has prepared me to face challenges in the technological world.",
+      "fecha": "2024",
+      "ubication": "Bogotá DC"
     },
     "microsoft": {
       "name": "Bachelor's degree in Computer Science",
@@ -61,9 +67,15 @@
     "subtitle": "Do you have a problem to solve?",
     "description": "Tell me your ideas to develop the website of your dreams.",
     "form": {
-      "name": {"label": "Name"},
-      "email": {"label": "Email"},
-      "message": {"label": "Message"},
+      "name": {
+        "label": "Name"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "message": {
+        "label": "Message"
+      },
       "submit": "Send"
     },
     "success": "Message sent successfully!",

@@ -55,6 +55,30 @@ const Project = () => {
    * @param {string} link2 - The secondary link associated with the project.
    */
   const projects = [
+      {
+      title: "Maintenance Manager",
+      description: "Web App",
+      fecha: "December 2024",
+      backgroundImage: MaintenanceManager,
+      link2: "https://github.com/Cristian-DW/maintenance-manager",
+      link: "https://github.com/Cristian-DW/maintenance-manager",
+    },
+    {
+      title: "MyLumina",
+      description: "Social Media Platform",
+      fecha: "January 2026",
+      backgroundImage: MyLumina,
+      link2: "https://github.com/Cristian-DW/mylumina",
+      link: "https://mylumina.vercel.app/",
+    },
+    {
+      title: "TodoList",
+      description: "App",
+      fecha: "February 2023",
+      backgroundImage: ProjectTres,
+      link2: "https://github.com/Cristian-DW/todoList",
+      link: "https://cristian-dw.github.io/todoList/",
+    },
     {
       title: "ViajaYa",
       description: "Landing page",
@@ -70,30 +94,6 @@ const Project = () => {
       backgroundImage: ProjectUno,
       link2: "https://github.com/Cristian-DW/CodeCraft",
       link: "https://codecracf.netlify.app/",
-    },
-    {
-      title: "TodoList",
-      description: "App",
-      fecha: "February 2023",
-      backgroundImage: ProjectTres,
-      link2: "https://github.com/Cristian-DW/todoList",
-      link: "https://cristian-dw.github.io/todoList/",
-    },
-    {
-      title: "Maintenance Manager",
-      description: "Web App",
-      fecha: "December 2024",
-      backgroundImage: MaintenanceManager,
-      link2: "https://github.com/Cristian-DW/maintenance-manager",
-      link: "https://github.com/Cristian-DW/maintenance-manager",
-    },
-    {
-      title: "MyLumina",
-      description: "Social Media Platform",
-      fecha: "January 2026",
-      backgroundImage: MyLumina,
-      link2: "https://github.com/Cristian-DW/mylumina",
-      link: "https://mylumina.vercel.app/",
     },
   ];
 

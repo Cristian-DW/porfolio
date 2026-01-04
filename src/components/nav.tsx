@@ -4,6 +4,7 @@ import Menu from '../assets/menu.svg';
 import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 import LanguageSelector from './extras/LanguageSelector';
+import clsx from 'clsx';
 
 /**
  * Nav component.
@@ -13,6 +14,7 @@ import LanguageSelector from './extras/LanguageSelector';
 const Nav = () => {
   const { t } = useTranslation();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -21,13 +23,33 @@ const Nav = () => {
   const mobileMenuClasses = isMobileMenuOpen ? 'block' : 'hidden';
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
     // Disable scroll when the mobile menu is open
     document.body.style.overflow = isMobileMenuOpen ? 'hidden' : 'auto';
   }, [isMobileMenuOpen]);
 
   return (
     <>
-      <nav className="fixed top-4 inset-x-0 mx-auto z-30 w-[70vw] max-w-[1400px] rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-lg animate-fade-down animate-once animate-ease-linear">
+      <nav
+        className={clsx(
+          "fixed top-4 inset-x-0 mx-auto z-40 w-[70vw] max-w-[1400px] rounded-3xl transition-all duration-500 animate-fade-down animate-once animate-ease-linear",
+          isScrolled
+            ? "border border-white/10 bg-white/5 backdrop-blur-xl shadow-lg"
+            : "border-transparent bg-transparent backdrop-blur-none shadow-none"
+        )}
+      >
         <div className="mx-auto max-w-7xl px-2">
           <div className="flex h-14 items-center justify-between">
             <div className="absolute t-0 right-2 flex items-center 2xl:hidden">
