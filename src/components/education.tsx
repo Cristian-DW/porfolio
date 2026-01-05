@@ -25,7 +25,7 @@ const Education: React.FC = () => {
           <h3 className="subtitle text-center 2xl:text-left">
             {t('education.title')}
           </h3>
-          <p className="text-md font-light 2xl:text-lg">
+          <p className="text-sm md:text-base font-medium 2xl:text-lg text-gray-400 leading-relaxed max-w-2xl">
             {t('education.description')}
           </p>
         </div>

@@ -22,27 +22,27 @@ const About: React.FC<AboutProps> = ({ selectedColor }) => {
   return (
     <div
       id="about"
-      className="w-full min-h-screen flex items-center justify-center py-20 px-8 md:px-20 2xl:px-40 bg-fondo"
+      className="w-full min-h-screen flex items-center justify-center py-16 md:py-20 px-8 md:px-20 2xl:px-40 bg-fondo"
     >
-      <div className="md:grid grid-cols-5 gap-10 w-full max-w-screen-2xl">
+      <div className="md:grid grid-cols-5 gap-8 md:gap-14 w-full max-w-screen-2xl">
         <div className="md:col-span-2 md:block xxl:flex justify-center">
-          <div className='relative w-[300px] h-[400px] mb-[30px] 2xl:pb-0 2xl:w-[460px] 2xl:h-[592px] bg-black'>
+          <div className='relative w-[280px] h-[360px] mb-[30px] 2xl:pb-0 2xl:w-[420px] 2xl:h-[540px] bg-black'>
             <div
-              className={`absolute w-[220px] 2xl:w-[450px] 2xl:h-[600px] bottom-6 2xl:bottom-14 ${selectedColor} -right-10 m-0 p-0 transition-colors duration-300`}
+              className={`absolute w-full h-full bottom-4 md:bottom-8 ${selectedColor} -right-6 md:-right-10 m-0 p-0 transition-colors duration-300`}
             >
-              <img src={ImgAbout} alt='Cristian Castro' width='auto' height='400px' loading="lazy" />
+              <img src={ImgAbout} alt='Cristian Castro' className="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>
-        <div className="md:col-span-3">
-          <h4 className="text-xl 2xl:text-3xl mb-4">{t('about.title')}</h4>
-          <p className="text-md font-light 2xl:text-lg">
+        <div className="md:col-span-3 flex flex-col justify-center">
+          <h4 className="text-lg md:text-xl 2xl:text-2xl font-black uppercase tracking-tighter mb-4 text-white">{t('about.title')}</h4>
+          <p className="text-sm md:text-base font-medium 2xl:text-lg text-gray-400 leading-relaxed max-w-2xl">
             {t('about.description')}
           </p>
           <Link to="contact" smooth={true} duration={900}>
-            <button className="button 2xl:mt-28 2xl:w-52 hover:text-fondo animate-fade-down animate-once animate-delay-[3000ms] animate-ease-linear">
-              <span className="relative z-10">
-                <a href="#contact" className="text-sm xl:text-xl">{t('nav.contact')}</a>
+            <button className="button mt-10 md:mt-14 w-44 md:w-48 hover:text-fondo transition-all duration-300 transform hover:scale-105 active:scale-95">
+              <span className="relative z-10 text-xs md:text-sm font-black uppercase tracking-widest">
+                {t('nav.contact')}
               </span>
             </button>
           </Link>

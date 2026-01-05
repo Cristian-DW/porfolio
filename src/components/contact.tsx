@@ -81,55 +81,58 @@ const ContactForm: React.FC = () => {
   return (
     <div
       id="contact"
-      className="min-h-screen flex items-center justify-center py-20 px-8 md:px-20 2xl:px-40"
+      className="min-h-[70vh] flex items-center justify-center py-16 md:py-24 px-8 md:px-20 2xl:px-40"
     >
       <div className="2xl:grid grid-cols-7 w-full max-w-screen-2xl">
-        <div className="mb-8 2xl:col-span-3 2xl:col-start-2 flex-col justify-center items 2xl:pr-32">
-          <h3 className="subtitle text-center 2xl:text-left">{t('contact.title')}</h3>
-          <h4 className="text text-center 2xl:text-left">
-            <span className="text-xl 2xl:text-3xl">
+        <div className="mb-10 2xl:col-span-3 2xl:col-start-2 flex flex-col justify-center items-center 2xl:items-start 2xl:pr-20">
+          <h3 className="text-fondo2 text-[10px] md:text-xs uppercase tracking-[0.4em] font-black mb-4">{t('contact.title')}</h3>
+          <h4 className="mb-4">
+            <span className="text-xl md:text-3xl 2xl:text-4xl font-black text-white uppercase tracking-tighter leading-none">
               {t('contact.subtitle')}
             </span>
           </h4>
-          <p className="text-md font-light text-center 2xl:text-left 2xl:text-2xl">
+          <p className="text-gray-400 text-sm md:text-base 2xl:text-lg font-medium text-center 2xl:text-left leading-relaxed max-w-md">
             {t('contact.description')}
           </p>
         </div>
 
-        <div className="2xl:col-span-2 2xl:2xl:col-start-5">
-          <form onSubmit={handleSubmit}>
-            <div className="flex flex-col mb-4">
-              <label htmlFor="name" className="mb-1 font-light">{t('contact.form.name.label')}</label>
+        <div className="2xl:col-span-2 2xl:col-start-5">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="flex flex-col">
+              <label htmlFor="name" className="mb-2 text-[10px] md:text-xs uppercase tracking-widest font-black text-white/40">{t('contact.form.name.label')}</label>
               <input
-                className="w-full 2xl:w-full px-4 py-3 border border-gray-300 bg-transparent focus:ring-fondo2 focus:border-fondo2 focus:outline-none focus:ring-2 transition-colors"
+                className="w-full px-4 py-3 rounded-2xl border border-white/10 bg-white/5 text-white text-sm focus:ring-fondo2 focus:border-fondo2 focus:outline-none focus:ring-1 transition-all"
                 type="text"
                 id="name"
                 name="name"
+                placeholder="Tu nombre"
                 value={formData.name}
                 onChange={handleChange}
                 required
                 disabled={isSubmitting}
               />
             </div>
-            <div className="flex flex-col mb-4">
-              <label htmlFor="email" className="mb-1 font-light">{t('contact.form.email.label')}</label>
+            <div className="flex flex-col">
+              <label htmlFor="email" className="mb-2 text-[10px] md:text-xs uppercase tracking-widest font-black text-white/40">{t('contact.form.email.label')}</label>
               <input
-                className="w-full 2xl:w-full px-4 py-3 border border-gray-300 bg-transparent focus:ring-fondo2 focus:border-fondo2 focus:outline-none focus:ring-2 transition-colors"
+                className="w-full px-4 py-3 rounded-2xl border border-white/10 bg-white/5 text-white text-sm focus:ring-fondo2 focus:border-fondo2 focus:outline-none focus:ring-1 transition-all"
                 type="email"
                 id="email"
                 name="email"
+                placeholder="tu@email.com"
                 value={formData.email}
                 onChange={handleChange}
                 required
                 disabled={isSubmitting}
               />
             </div>
-            <div className="flex flex-col mb-4">
-              <label htmlFor="message" className="mb-1 font-light">{t('contact.form.message.label')}</label>
+            <div className="flex flex-col">
+              <label htmlFor="message" className="mb-2 text-[10px] md:text-xs uppercase tracking-widest font-black text-white/40">{t('contact.form.message.label')}</label>
               <textarea
-                className="w-full 2xl:w-full min-h-20 max-h-32 px-4 py-3 border border-gray-300 bg-transparent focus:ring-fondo2 focus:border-fondo2 focus:outline-none focus:ring-2 transition-colors"
+                className="w-full min-h-[100px] px-4 py-3 rounded-2xl border border-white/10 bg-white/5 text-white text-sm focus:ring-fondo2 focus:border-fondo2 focus:outline-none focus:ring-1 transition-all resize-none"
                 id="message"
                 name="message"
+                placeholder="¿Cómo puedo ayudarte?"
                 value={formData.message}
                 onChange={handleChange}
                 required
@@ -139,24 +142,20 @@ const ContactForm: React.FC = () => {
 
             {/* Status Messages */}
             {submitStatus === 'success' && (
-              <div className="mb-4 p-3 bg-green-500/20 border border-green-500 rounded text-green-100 text-sm">
-                ✓ {t('contact.form.success') || 'Message sent successfully! I will get back to you soon.'}
-              </div>
-            )}
-            {submitStatus === 'error' && (
-              <div className="mb-4 p-3 bg-red-500/20 border border-red-500 rounded text-red-100 text-sm">
-                ✗ {t('contact.form.error') || 'Failed to send message. Please try again or email directly at cristtiiank@gmail.com'}
+              <div className="p-3 bg-green-500/10 border border-green-500/20 rounded-xl text-green-400 text-[10px] md:text-xs font-bold uppercase tracking-wider text-center animate-fade-in">
+                ✓ {t('contact.form.success') || 'Message sent! I\'ll reply soon.'}
               </div>
             )}
 
             <button
-              className="flex mx-auto h-12 w-full md:w-[28.2rem] 2xl:w-full mt-10 items-center justify-center overflow-hidden bg-transparent border shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:bg-white before:text-opacity-10 before:duration-500 before:ease-out hover:shadow-white hover:before:h-12 hover:before:w-[28.2rem] hover:text-fondo disabled:opacity-50 disabled:cursor-not-allowed"
+              className="group relative h-12 w-full mt-6 rounded-full overflow-hidden flex items-center justify-center bg-white text-black hover:bg-white/90 transition-all font-black uppercase text-[10px] md:text-xs tracking-[0.2em] active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.1)] disabled:opacity-50"
               type="submit"
               disabled={isSubmitting}
             >
-              <span className="z-20">
-                {isSubmitting ? (t('contact.form.sending') || 'Sending...') : t('contact.form.submit')}
+              <span className="relative z-10">
+                {isSubmitting ? '...' : t('contact.form.submit')}
               </span>
+              <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </button>
           </form>
         </div>

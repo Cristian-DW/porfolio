@@ -12,15 +12,19 @@ const themes = [
 
 const Theme: React.FC<ThemeProps> = ({ changeBackgroundColor }) => {
   return (
-    <div className="fixed z-30 bottom-5 right-0 2xl:left-10 flex flex-col gap-3 p-2 w-10">
+    <div className="fixed z-40 bottom-6 left-6 flex flex-row md:flex-col items-center gap-3 p-2 bg-white/5 backdrop-blur-xl rounded-full border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-all duration-500 hover:bg-white/10 group">
       {themes.map((theme) => (
         <button
           key={theme.color}
-          className={`${theme.class} w-6 h-6 2xl:w-8 2xl:h-8 rounded-full border-2 border-white/20 hover:border-white/60 transition-all duration-300 shadow-lg hover:scale-110 active:scale-95`}
+          className={`${theme.class} w-5 h-5 md:w-6 md:h-6 rounded-full border-2 border-white/20 hover:border-white/80 transition-all duration-300 shadow-sm hover:scale-125 hover:rotate-12 active:scale-90 relative group/btn`}
           onClick={() => changeBackgroundColor(theme.color)}
-          title={theme.name}
           aria-label={`Cambiar a tema ${theme.name}`}
-        />
+        >
+          {/* Tooltip for desktop */}
+          <span className="absolute left-full ml-4 px-2 py-1 bg-white/10 backdrop-blur-md rounded-lg text-[10px] text-white opacity-0 group-hover/btn:opacity-100 pointer-events-none transition-opacity duration-300 hidden md:block whitespace-nowrap border border-white/5">
+            {theme.name}
+          </span>
+        </button>
       ))}
     </div>
   );
