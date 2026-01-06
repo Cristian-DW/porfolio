@@ -22,7 +22,7 @@ const About: React.FC<AboutProps> = ({ selectedColor }) => {
   return (
     <div
       id="about"
-      className="w-full min-h-screen flex items-center justify-center py-16 md:py-20 px-8 md:px-20 2xl:px-40 bg-fondo"
+      className="w-full min-h-screen flex items-center justify-center py-12 md:py-16 px-8 md:px-20 2xl:px-40 bg-fondo"
     >
       <div className="md:grid grid-cols-5 gap-8 md:gap-14 w-full max-w-screen-2xl">
         <div className="md:col-span-2 md:block xxl:flex justify-center">
@@ -35,12 +35,12 @@ const About: React.FC<AboutProps> = ({ selectedColor }) => {
           </div>
         </div>
         <div className="md:col-span-3 flex flex-col justify-center">
-          <h4 className="text-lg md:text-xl 2xl:text-2xl font-black uppercase tracking-tighter mb-4 text-white">{t('about.title')}</h4>
+          <h4 className="text-base md:text-lg 2xl:text-xl font-black uppercase tracking-tighter mb-3 text-white">{t('about.title')}</h4>
           <p className="text-sm md:text-base font-medium 2xl:text-lg text-gray-400 leading-relaxed max-w-2xl">
             {t('about.description')}
           </p>
           <Link to="contact" smooth={true} duration={900}>
-            <button className="button mt-10 md:mt-14 w-44 md:w-48 hover:text-fondo transition-all duration-300 transform hover:scale-105 active:scale-95">
+            <button className="button mt-8 md:mt-10 w-44 md:w-48 hover:text-fondo transition-all duration-300 transform hover:scale-105 active:scale-95">
               <span className="relative z-10 text-xs md:text-sm font-black uppercase tracking-widest">
                 {t('nav.contact')}
               </span>

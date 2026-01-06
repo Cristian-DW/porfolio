@@ -81,17 +81,17 @@ const ContactForm: React.FC = () => {
   return (
     <div
       id="contact"
-      className="min-h-[70vh] flex items-center justify-center py-16 md:py-24 px-8 md:px-20 2xl:px-40"
+      className="min-h-[60vh] flex items-center justify-center py-12 md:py-16 px-8 md:px-20 2xl:px-40"
     >
       <div className="2xl:grid grid-cols-7 w-full max-w-screen-2xl">
         <div className="mb-10 2xl:col-span-3 2xl:col-start-2 flex flex-col justify-center items-center 2xl:items-start 2xl:pr-20">
-          <h3 className="text-fondo2 text-[10px] md:text-xs uppercase tracking-[0.4em] font-black mb-4">{t('contact.title')}</h3>
-          <h4 className="mb-4">
-            <span className="text-xl md:text-3xl 2xl:text-4xl font-black text-white uppercase tracking-tighter leading-none">
+          <h3 className="text-fondo2 text-[10px] md:text-xs uppercase tracking-[0.4em] font-black mb-3">{t('contact.title')}</h3>
+          <h4 className="mb-3">
+            <span className="text-lg md:text-2xl 2xl:text-3xl font-black text-white uppercase tracking-tighter leading-none">
               {t('contact.subtitle')}
             </span>
           </h4>
-          <p className="text-gray-400 text-sm md:text-base 2xl:text-lg font-medium text-center 2xl:text-left leading-relaxed max-w-md">
+          <p className="text-gray-400 text-xs md:text-sm 2xl:text-base font-medium text-center 2xl:text-left leading-relaxed max-w-md">
             {t('contact.description')}
           </p>
         </div>
@@ -101,7 +101,7 @@ const ContactForm: React.FC = () => {
             <div className="flex flex-col">
               <label htmlFor="name" className="mb-2 text-[10px] md:text-xs uppercase tracking-widest font-black text-white/40">{t('contact.form.name.label')}</label>
               <input
-                className="w-full px-4 py-3 rounded-2xl border border-white/10 bg-white/5 text-white text-sm focus:ring-fondo2 focus:border-fondo2 focus:outline-none focus:ring-1 transition-all"
+                className="w-full px-3 py-2.5 rounded-2xl border border-white/10 bg-white/5 text-white text-sm focus:ring-fondo2 focus:border-fondo2 focus:outline-none focus:ring-1 transition-all"
                 type="text"
                 id="name"
                 name="name"
@@ -129,7 +129,7 @@ const ContactForm: React.FC = () => {
             <div className="flex flex-col">
               <label htmlFor="message" className="mb-2 text-[10px] md:text-xs uppercase tracking-widest font-black text-white/40">{t('contact.form.message.label')}</label>
               <textarea
-                className="w-full min-h-[100px] px-4 py-3 rounded-2xl border border-white/10 bg-white/5 text-white text-sm focus:ring-fondo2 focus:border-fondo2 focus:outline-none focus:ring-1 transition-all resize-none"
+                className="w-full min-h-[100px] px-3 py-2.5 rounded-2xl border border-white/10 bg-white/5 text-white text-sm focus:ring-fondo2 focus:border-fondo2 focus:outline-none focus:ring-1 transition-all resize-none"
                 id="message"
                 name="message"
                 placeholder="¿Cómo puedo ayudarte?"
@@ -148,7 +148,7 @@ const ContactForm: React.FC = () => {
             )}
 
             <button
-              className="group relative h-12 w-full mt-6 rounded-full overflow-hidden flex items-center justify-center bg-white text-black hover:bg-white/90 transition-all font-black uppercase text-[10px] md:text-xs tracking-[0.2em] active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.1)] disabled:opacity-50"
+              className="group relative h-11 w-full mt-5 rounded-full overflow-hidden flex items-center justify-center bg-white text-black hover:bg-white/90 transition-all font-black uppercase text-[10px] md:text-xs tracking-[0.2em] active:scale-95 shadow-[0_0_30px_rgba(255,255,255,0.1)] disabled:opacity-50"
               type="submit"
               disabled={isSubmitting}
             >
