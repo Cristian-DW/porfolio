@@ -37,9 +37,8 @@ function App() {
   return (
     <div className={`App ${isLoading ? 'loading' : ''}`}>
       <div
-        className={`loading-screen ${selectedColor} ${
-          isLoading ? 'loading-active' : 'loading-inactive'
-        }`}
+        className={`loading-screen ${selectedColor} ${isLoading ? 'loading-active' : 'loading-inactive'
+          }`}
       >
         <img
           width="100"
@@ -54,18 +53,18 @@ function App() {
         <div className="fixed top-0 left-0 w-full z-50">
           <Nav />
           <Theme changeBackgroundColor={changeBackgroundColor} />
-          <Social selectedColor={selectedColor} />
+          <Social selectedColor={selectedColor} changeBackgroundColor={changeBackgroundColor} />
         </div>
-          <main className="relative z-30 bg-gradient-to-b from-transparent bg-fondo mt-[100vh]">
-            <About selectedColor={selectedColor} />
-            <Skills selectedColor={selectedColor} />
-            <Education/>
-            <Project/>
-            <ContactForm/>
-            <Footer selectedColor={selectedColor} />
-          </main>
-        </div>
+        <main className="relative z-30 bg-gradient-to-b from-transparent bg-fondo mt-[100vh]">
+          <About selectedColor={selectedColor} />
+          <Skills selectedColor={selectedColor} />
+          <Education />
+          <Project />
+          <ContactForm />
+          <Footer selectedColor={selectedColor} />
+        </main>
       </div>
+    </div>
   );
 }
 

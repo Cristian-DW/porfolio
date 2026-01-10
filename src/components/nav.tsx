@@ -119,6 +119,9 @@ const Nav = () => {
             <Link to="contact" smooth={true} duration={900} offset={-100} className="block py-14 text-lg w-full text-center cursor-pointer" onClick={toggleMobileMenu}>
               {t('nav.contact')}
             </Link>
+            <div className="block py-8 text-lg w-full text-center">
+              <LanguageSelector />
+            </div>
           </div>
         </div>
       )}
