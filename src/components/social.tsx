@@ -10,6 +10,7 @@ interface SocialProps {
 
 const Social: React.FC<SocialProps> = ({ selectedColor, changeBackgroundColor }) => {
   const [backgroundClass, setBackgroundClass] = useState('bg-fondo2');
+  const [isThemeOpen, setIsThemeOpen] = useState(false);
 
   useEffect(() => {
     // Cuando selectedColor cambia en el componente App, actualiza backgroundClass
@@ -23,9 +24,9 @@ const Social: React.FC<SocialProps> = ({ selectedColor, changeBackgroundColor })
   }, [selectedColor]);
 
   const themes = [
-    { color: 'bg-fondo2', emoji: '💜', label: 'Morado' },
-    { color: 'bg-fondo3', emoji: '💚', label: 'Verde' },
-    { color: 'bg-fondo4', emoji: '🧡', label: 'Terracota' },
+    { color: 'bg-fondo2', label: 'Morado' },
+    { color: 'bg-fondo3', label: 'Verde' },
+    { color: 'bg-fondo4', label: 'Terracota' },
   ];
 
   const socialLinks = [
@@ -55,53 +56,64 @@ const Social: React.FC<SocialProps> = ({ selectedColor, changeBackgroundColor })
       <div
         className={`fixed bottom-0 left-0 right-0 w-full h-14 ${backgroundClass} 
                     backdrop-blur-xl bg-opacity-80 
-                    flex justify-center items-center gap-1
+                    flex justify-around items-center px-4
                     border-t border-white/10
                     2xl:hidden z-50`}
       >
-        {/* Social Icons - Left Side */}
-        <div className="flex justify-center items-center gap-1">
-          {socialLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={link.label}
-              className="p-3 rounded-xl transition-all duration-300
-                         hover:scale-110 hover:bg-white/10
-                         active:scale-95"
-            >
-              <img
-                src={link.icon}
-                alt={link.alt}
-                className="w-5 h-5 transition-all duration-300
-                           hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]"
-              />
-            </a>
-          ))}
-        </div>
+        {/* Social Icons */}
+        {socialLinks.map((link, index) => (
+          <a
+            key={index}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={link.label}
+            className="p-3 rounded-xl transition-all duration-300
+                       hover:scale-110 hover:bg-white/10
+                       active:scale-95"
+          >
+            <img
+              src={link.icon}
+              alt={link.alt}
+              className="w-6 h-6 transition-all duration-300
+                         hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]"
+            />
+          </a>
+        ))}
 
-        {/* Divider */}
-        <div className="w-px h-8 bg-white/20 mx-1"></div>
+        {/* Theme Toggle Button */}
+        <div className="relative">
+          <button
+            onClick={() => setIsThemeOpen(!isThemeOpen)}
+            aria-label="Change Theme"
+            className={`p-3 rounded-xl transition-all duration-300
+                       hover:scale-110 hover:bg-white/10
+                       active:scale-95 ${isThemeOpen ? 'bg-white/20' : ''}`}
+          >
+            <span className="text-xl">🎨</span>
+          </button>
 
-        {/* Theme Switcher - Right Side */}
-        <div className="flex justify-center items-center gap-1">
-          {themes.map((theme) => (
-            <button
-              key={theme.color}
-              onClick={() => changeBackgroundColor?.(theme.color)}
-              aria-label={`Cambiar a tema ${theme.label}`}
-              className="p-3 rounded-xl transition-all duration-300
-                         hover:scale-110 hover:bg-white/10
-                         active:scale-95"
-            >
-              <span className="text-xl transition-all duration-300
-                             hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">
-                {theme.emoji}
-              </span>
-            </button>
-          ))}
+          {/* Theme Popover */}
+          {isThemeOpen && (
+            <div className="absolute bottom-16 right-0 mb-2 p-2 rounded-2xl
+                             backdrop-blur-xl bg-white/10 border border-white/20
+                             shadow-2xl flex flex-col gap-3 animate-fade-up">
+              {themes.map((theme) => (
+                <button
+                  key={theme.color}
+                  onClick={() => {
+                    changeBackgroundColor?.(theme.color);
+                    setIsThemeOpen(false);
+                  }}
+                  aria-label={`Select ${theme.label}`}
+                  className="w-10 h-10 rounded-full border-2 border-white/30 
+                             hover:scale-110 transition-transform shadow-lg relative"
+                >
+                  <div className={`absolute inset-0 rounded-full ${theme.color === 'bg-fondo2' ? 'bg-[#4C1D95]' : theme.color === 'bg-fondo3' ? 'bg-[#065F46]' : 'bg-[#9A3412]'} opacity-80`} />
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 

@@ -5,16 +5,16 @@ interface ThemeProps {
 }
 
 const themes = [
-  { color: 'bg-fondo2', name: 'Morado', class: 'bg-[#4C1D95]', emoji: '💜' },
-  { color: 'bg-fondo3', name: 'Verde', class: 'bg-[#065F46]', emoji: '💚' },
-  { color: 'bg-fondo4', name: 'Terracota', class: 'bg-[#9A3412]', emoji: '🧡' },
+  { color: 'bg-fondo2', name: 'Morado', class: 'bg-[#4C1D95]' },
+  { color: 'bg-fondo3', name: 'Verde', class: 'bg-[#065F46]' },
+  { color: 'bg-fondo4', name: 'Terracota', class: 'bg-[#9A3412]' },
 ];
 
 const Theme: React.FC<ThemeProps> = ({ changeBackgroundColor }) => {
   return (
     // Desktop Only: Vertical Sidebar on Bottom-Left (hidden on mobile, shown in social bar)
     <div
-      className="hidden 2xl:flex 2xl:flex-col 
+      className="hidden 2xl:flex 2xl:flex-col items-center
                  fixed bottom-6 left-6 
                  w-16 gap-4
                  backdrop-blur-xl bg-white/5 
@@ -37,14 +37,13 @@ const Theme: React.FC<ThemeProps> = ({ changeBackgroundColor }) => {
                      active:scale-95"
         >
           <div
-            className={`${theme.class} w-10 h-10 rounded-full 
+            className={`${theme.class} w-6 h-6 rounded-full 
                        border-2 border-white/30 group-hover:border-white/60
                        shadow-md group-hover:shadow-lg
                        transition-all duration-300 
                        group-hover:scale-110 group-hover:rotate-12
                        flex items-center justify-center text-lg`}
           >
-            {theme.emoji}
           </div>
 
           {/* Decorative glow on hover */}
