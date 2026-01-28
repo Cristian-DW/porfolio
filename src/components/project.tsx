@@ -91,7 +91,7 @@ const Project = () => {
       fecha: "April 2023",
       backgroundImage: ProjectUno,
       link2: "https://github.com/Cristian-DW/CodeCraft",
-      link: "https://codecracf.netlify.app/",
+      link: "https://mycodecracf.netlify.app/",
       icons: [JSIcon, TailwindIcon]
     },
   ];
