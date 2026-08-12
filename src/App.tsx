@@ -3,65 +3,92 @@ import Hero from './components/hero';
 import Nav from './components/nav';
 import Social from './components/social';
 import About from './components/about';
-import Education from './components/education';
 import Skills from './components/skills';
 import Project from './components/project';
+import DeltuxArchitecture from './components/DeltuxArchitecture';
+import EngineeringChallenges from './components/EngineeringChallenges';
+import ArchitectureMindset from './components/ArchitectureMindset';
+import Certifications from './components/Certifications';
+import AISection from './components/AISection';
+import CareerDirection from './components/CareerDirection';
 import ContactForm from './components/contact';
 import Footer from './components/footer';
 import Logo from './assets/logo.svg';
 import './App.css';
-import Theme from './components/extras/Theme';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [selectedColor, setSelectedColor] = useState('bg-fondo2'); // Comenzamos con el tema morado
 
   useEffect(() => {
-    // Recuperar el tema guardado del localStorage
-    const savedTheme = localStorage.getItem('portfolio-theme');
-    if (savedTheme) {
-      setSelectedColor(savedTheme);
-    }
+    // Ensure theme is applied (anti-flash already done in index.html)
+    const stored = localStorage.getItem('portfolio-theme') || 'dark';
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const resolved = stored === 'system' ? (prefersDark ? 'dark' : 'light') : stored;
+    document.documentElement.setAttribute('data-theme', resolved);
 
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1800);
   }, []);
-
-  const changeBackgroundColor = (colorClass: string) => {
-    setSelectedColor(colorClass);
-    // Guardar el tema en localStorage
-    localStorage.setItem('portfolio-theme', colorClass);
-  };
 
   return (
     <div className={`App ${isLoading ? 'loading' : ''}`}>
-      <div
-        className={`loading-screen ${selectedColor} ${isLoading ? 'loading-active' : 'loading-inactive'
-          }`}
-      >
+      {/* Loading Screen */}
+      <div className={`loading-screen ${isLoading ? 'loading-active' : 'loading-inactive'}`}>
         <img
           width="100"
           height="100"
           src={Logo}
-          alt="logo"
+          alt="Cristian Castro"
           className="animate-jump-out animate-once animate-delay-500 animate-duration-[1500ms]"
         />
       </div>
+
+      {/* Main layout */}
       <div className="relative">
-        <Hero selectedColor={selectedColor} />
+        {/* Hero fixed background */}
+        <Hero />
+
+        {/* Fixed overlays */}
         <div className="fixed top-0 left-0 w-full z-50">
           <Nav />
-          <Theme changeBackgroundColor={changeBackgroundColor} />
-          <Social selectedColor={selectedColor} changeBackgroundColor={changeBackgroundColor} />
         </div>
-        <main className="relative z-30 bg-gradient-to-b from-transparent bg-fondo mt-[100vh]">
-          <About selectedColor={selectedColor} />
-          <Skills selectedColor={selectedColor} />
-          <Education />
+        <Social />
+
+        {/* Page content */}
+        <main className="relative z-30 bg-gradient-to-b from-transparent bg-surface mt-[100vh]">
+          {/* 1. About */}
+          <About />
+
+          {/* 2. Core Capabilities */}
+          <Skills />
+
+          {/* 3. Featured Projects */}
           <Project />
+
+          {/* 4. Project Architecture */}
+          <DeltuxArchitecture />
+
+          {/* 5. Engineering Challenges */}
+          <EngineeringChallenges />
+
+          {/* 6. Architecture Mindset */}
+          <ArchitectureMindset />
+
+          {/* 7. Certifications */}
+          <Certifications />
+
+          {/* 8. AI & Emerging Technologies */}
+          <AISection />
+
+          {/* 9. Career & Professional Growth */}
+          <CareerDirection />
+
+          {/* 10. Contact */}
           <ContactForm />
-          <Footer selectedColor={selectedColor} />
+
+          {/* 11. Footer */}
+          <Footer />
         </main>
       </div>
     </div>
