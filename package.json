@@ -12,11 +12,9 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "@excalidraw/excalidraw": "^0.18.0",
-    "@material-tailwind/react": "^2.1.1",
+    "clsx": "^2.1.1",
     "i18next": "^25.5.2",
     "i18next-browser-languagedetector": "^8.2.0",
-    "keep-react": "^1.1.2",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "postcss-flexbugs-fixes": "^5.0.2",
