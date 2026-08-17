@@ -2,101 +2,178 @@
   "nav": {
     "about": "About",
     "skills": "Skills",
-    "education": "Education",
     "projects": "Projects",
+    "architecture": "Architecture",
+    "certifications": "Certifications",
+    "career": "Career",
     "contact": "Contact"
   },
   "hero": {
-    "role": "Full Stack Software Developer",
-    "description": "Passionate about creating amazing web experiences",
-    "projectsButton": "View Projects",
-    "aboutButton": "About Me"
+    "eyebrow": "Software Engineering · Cloud Architecture · Enterprise Integration · SAP BTP",
+    "headline_line1": "Software Engineer &",
+    "headline_line2": "Solution Architect",
+    "subheadline": "Designing and building scalable software, cloud solutions and enterprise integrations.",
+    "specialty_software": "Software Engineering",
+    "specialty_cloud": "Cloud Architecture",
+    "specialty_integration": "Enterprise Integration",
+    "specialty_sap": "SAP BTP",
+    "cta_explore": "Explore my work",
+    "cta_architecture": "View architecture",
+    "cta_contact": "Contact me"
   },
   "about": {
-    "title": "HELLO!",
-    "description": "I'm Cristian Castro, a software developer with experience in designing and developing functional and scalable digital solutions. I have worked on enterprise management systems, billing systems, electronic payments, custom reports, and robust websites. I specialize in technologies like React, JavaScript, and Node.js, and I use tools like Figma to create intuitive interfaces focused on user experience. Additionally, I have implemented AI automations and designed visual identities from scratch, combining technical and creative aspects to deliver complete and efficient solutions."
+    "eyebrow": "ABOUT ME",
+    "headline_line1": "I build software and design",
+    "headline_line2": "how systems fit together.",
+    "badge_software": "Software Engineering",
+    "badge_cloud": "Cloud Platforms",
+    "badge_integration": "Enterprise Integration",
+    "badge_sap": "SAP BTP",
+    "badge_architecture": "Architecture",
+    "para1": "I'm a software engineer focused on designing and building scalable digital solutions. My experience spans full-stack development, cloud platforms, APIs, enterprise integration, databases and distributed systems.",
+    "para2": "I combine hands-on engineering with an architectural mindset, focusing on how applications, services, data and integrations work together as a complete solution.",
+    "para3": "My current specialization includes SAP Business Technology Platform, enterprise integration and cloud architecture, while continuing to develop broader expertise across software architecture, cloud-native development and emerging technologies such as AI.",
+    "cta_contact": "Get in touch",
+    "cta_projects": "See my work"
   },
   "skills": {
-    "title": "Skills",
-    "frontend": "Frontend",
-    "backend": "Backend & Cloud",
-    "others": "Other Skills",
-    "sap_cap": "SAP CAP",
-    "sap_btp": "SAP BTP (Cloud Foundry / managed services)",
-    "apis": "SOAP / REST APIs",
-    "sql": "SQL, PL/SQL",
-    "microservices": "Microservices architectures"
-  },
-  "education": {
-    "title": "Education",
-    "certifications": "Certifications",
-    "description": "A skilled professional passionate about creating innovative technological solutions. My strong background in application analysis and development has given me a deep understanding of how to build efficient and robust systems. However, my approach goes beyond technical functionality: I combine my technical skills with a deep understanding of digital marketing and UX/UI design to deliver products that not only meet technical requirements but also captivate users and generate positive business results.",
-    "sena": {
-      "name": "Technologist Certification in Software Analysis and Development",
-      "bio": "I acquired strong skills in designing, creating, and maintaining computer applications. My training at SENA has prepared me to face challenges in the technological world.",
-      "fecha": "2024",
-      "ubication": "Bogotá DC"
+    "title": "Core Capabilities",
+    "subtitle": "Professional competencies across software engineering, cloud, integration and architecture.",
+    "groups": {
+      "software": "Software Engineering",
+      "cloud": "Cloud & Platforms",
+      "integration": "Enterprise Integration",
+      "architecture": "Architecture",
+      "data": "Data",
+      "devops": "DevOps",
+      "ai": "AI / Artificial Intelligence"
     },
-    "microsoft": {
-      "name": "Bachelor's degree in Computer Science",
-      "bio": "I acquired strong skills in designing, creating, and maintaining computer applications. My training at Microsoft has prepared me to face challenges in the technological world.",
-      "fecha": "2020",
-      "ubication": "Bogotá DC"
-    },
-    "linkedin": {
-      "name": "Bachelor's degree in Marketing",
-      "bio": "I acquired strong skills in designing, creating, and maintaining computer applications. My training at LinkedIn has prepared me to face challenges in the technological world.",
-      "fecha": "2018",
-      "ubication": "Bogotá DC"
-    },
-    "google": {
-      "name": "Google UX Design Professional Certificate",
-      "bio": "I learned the foundations of UX design, including ideation, wireframing, prototyping, and user research. I developed skills in using tools like Figma and Adobe XD to create user-centered designs.",
-      "fecha": "2023",
-      "ubication": "Online"
-    }
+    "ai_intro": "Knowledge and practical exploration of AI technologies and their integration into software solutions."
   },
   "projects": {
-    "title": "Projects",
-    "subtitle": "Explore my wonderful world",
+    "title": "Featured Work",
+    "subtitle": "Enterprise-grade software designed with architecture in mind.",
     "viewProject": "View Project",
     "sourceCode": "Source Code",
-    "viewMore": "View More"
+    "viewMore": "View More Projects"
+  },
+  "architecture": {
+    "eyebrow": "CASE STUDY",
+    "title": "Deltux POS Architecture",
+    "description": "An overview of the distributed system architecture behind Deltux POS — designed for availability, multi-tenant isolation and maintainable enterprise integrations.",
+    "users": "Users / Browsers",
+    "layer_presentation_title": "Presentation Layer",
+    "layer_presentation_tech": "Next.js · React · TypeScript · Tailwind CSS",
+    "layer_presentation_desc": "Responsive client application. Handles POS operations, inventory, invoicing, customer management and sales analytics. Deployed on the edge network for low-latency delivery.",
+    "layer_router_title": "Application Router / API Layer",
+    "layer_router_tech": "SAP Application Router · JWT Validation · Route Config",
+    "layer_router_desc": "Routes incoming requests from the frontend to the appropriate backend services. Validates JWT tokens, enforces authorization rules and manages service discovery.",
+    "layer_services_title": "Business Services Layer",
+    "layer_services_tech": "Node.js · SAP CAP · REST APIs · Auth Service",
+    "layer_services_desc": "Core business logic services: POS operations, inventory management, invoicing engine, customer/supplier management. Auth Service issues HttpOnly cookies and manages sessions.",
+    "layer_data_title": "Data Layer",
+    "layer_data_tech": "PostgreSQL · Row-Level Security · Multi-tenant Isolation",
+    "layer_data_desc": "Multi-tenant database with row-level security (RLS) ensuring strict data isolation between tenants at the database level — preventing data leaks even under application bugs.",
+    "platform": "SAP BTP / Cloud Foundry",
+    "layer_hint": "Click any layer to expand its description",
+    "closing": "The architecture separates presentation, routing, business services and persistence, allowing the system to evolve independently while maintaining clear boundaries between responsibilities.",
+    "highlight1_title": "Client Layer",
+    "highlight1_desc": "Next.js application optimized for performance. Implements responsive UI with Tailwind CSS and real-time data updates for POS operations.",
+    "highlight2_title": "API Gateway & Services",
+    "highlight2_desc": "SAP Application Router manages routing and authorization. Node.js microservices handle business domain logic with clear separation of concerns.",
+    "highlight3_title": "Data Layer",
+    "highlight3_desc": "Multi-tenant PostgreSQL with Row-Level Security. Strict data isolation at the database level ensures B2B tenant privacy by design."
+  },
+  "challenges": {
+    "eyebrow": "DELTUX POS",
+    "title": "Engineering Challenges",
+    "subtitle": "Real technical problems encountered during development — and how they were approached.",
+    "label_challenge": "Challenge",
+    "label_decision": "Decision",
+    "label_solution": "Solution",
+    "label_outcome": "Outcome",
+    "deployment_title": "Multi-Service Deployment",
+    "deployment_challenge": "Managing the deployment of a distributed application composed of frontend, application router and backend services across environments with different configuration dependencies.",
+    "deployment_decision": "Use a declarative multi-target deployment model to handle service dependencies and ordering consistently across all environments.",
+    "deployment_solution": "Implemented MTA (Multi-Target Application) patterns using mta.yaml for declarative deployments, ensuring correct dependency resolution on Cloud Foundry.",
+    "deployment_outcome": "Consistent and repeatable deployments across dev, staging and production environments with automated dependency management.",
+    "auth_title": "Authentication Behind Reverse Proxies",
+    "auth_challenge": "Securely managing user sessions and JWT tokens in a microservices architecture where requests pass through multiple routing layers before reaching backend services.",
+    "auth_decision": "Centralize authentication in a dedicated service and propagate identity via internal headers — never exposing tokens to client-side JavaScript.",
+    "auth_solution": "Designed a centralized Auth Service that issues HttpOnly, Secure cookies. The Application Router validates tokens and forwards user context via internal headers to downstream services.",
+    "auth_outcome": "Secure session management with no token exposure to client-side JavaScript, even when multiple services are involved in the request path.",
+    "isolation_title": "Distributed Architecture & Data Isolation",
+    "isolation_challenge": "Ensuring strict data privacy and isolation for B2B tenants in a shared database environment where a single application bug could potentially expose cross-tenant data.",
+    "isolation_decision": "Apply security at the database level to prevent any application-layer bypass — making data isolation a guarantee, not a convention.",
+    "isolation_solution": "Implemented Row-Level Security (RLS) in PostgreSQL combined with a tenant-aware ORM layer guaranteeing that each query is automatically scoped to the current tenant.",
+    "isolation_outcome": "Cross-tenant data leaks impossible at the database level, even under application-level bugs or misconfigured queries."
+  },
+  "certifications": {
+    "eyebrow": "CREDENTIALS",
+    "title": "Certifications",
+    "subtitle": "Official SAP certifications validating expertise in cloud platform and integration technologies.",
+    "certified": "Certified",
+    "valid_through": "Valid through",
+    "solution_architect_name": "SAP Certified – Solution Architect – SAP BTP",
+    "solution_architect_valid_through": "July 18, 2027",
+    "integration_developer_name": "SAP Certified – Integration Developer",
+    "integration_developer_valid_through": "May 26, 2027",
+    "btp_administrator_name": "SAP Certified – SAP BTP Administrator",
+    "btp_administrator_valid_through": "March 22, 2027"
+  },
+  "ai": {
+    "eyebrow": "EMERGING TECHNOLOGIES",
+    "title": "AI & Emerging Technologies",
+    "description": "Exploring how Artificial Intelligence can enhance software engineering, business applications and enterprise solutions — from intelligent automation to AI-powered integrations.",
+    "note": "Practical exploration and ongoing learning — not established expertise. AI is becoming a critical layer in modern enterprise architectures and software engineering workflows."
+  },
+  "career": {
+    "eyebrow": "PATH",
+    "title": "Career & Professional Growth",
+    "subtitle": "A view of my professional journey — where I've been, where I am, and where I'm heading.",
+    "status_foundation": "Foundation",
+    "status_experience": "Experience",
+    "status_expanding": "Expanding",
+    "status_specialization": "Specialization",
+    "status_current": "Current Focus",
+    "status_future": "Future Direction",
+    "stage_software_engineering_title": "Software Engineering",
+    "stage_software_engineering_desc": "Strong foundation in software development, APIs, databases and application architecture.",
+    "stage_fullstack_title": "Full-Stack Development",
+    "stage_fullstack_desc": "Building end-to-end applications across frontend, backend, APIs and data.",
+    "stage_cloud_integration_title": "Cloud & Integration",
+    "stage_cloud_integration_desc": "Expanding into cloud platforms, distributed systems and enterprise integration.",
+    "stage_sap_btp_title": "SAP BTP",
+    "stage_sap_btp_desc": "Applying cloud-native development and enterprise integration capabilities through SAP Business Technology Platform.",
+    "stage_architecture_title": "Architecture",
+    "stage_architecture_desc": "Growing toward solution and integration architecture, focusing on scalable, secure and maintainable enterprise solutions.",
+    "stage_ai_emerging_title": "AI & Emerging Technologies",
+    "stage_ai_emerging_desc": "Exploring how artificial intelligence, generative AI and intelligent applications can become part of modern enterprise architectures.",
+    "projection_title": "Where I'm heading",
+    "projection_note": "This represents a career direction and long-term professional focus — not current experience or claimed expertise.",
+    "proj_stage1": "Software Engineer",
+    "proj_stage2": "Cloud & Integration Engineer",
+    "proj_stage3": "Solution / Integration Architect",
+    "proj_stage4": "Enterprise Solution Architect"
   },
   "contact": {
-    "title": "Contact me",
-    "subtitle": "Do you have a problem to solve?",
-    "description": "Tell me your ideas to develop the website of your dreams.",
+    "title": "Contact",
+    "headline": "Let's build something",
+    "headline_accent": "meaningful.",
+    "description_v2": "I'm interested in enterprise software, SAP BTP, cloud architecture, integration and challenging technical problems.",
     "form": {
-      "name": {
-        "label": "Name"
-      },
-      "email": {
-        "label": "Email"
-      },
-      "message": {
-        "label": "Message"
-      },
-      "submit": "Send"
+      "name": { "label": "Name" },
+      "email": { "label": "Email" },
+      "message": { "label": "Message" },
+      "submit": "Send message"
     },
-    "success": "Message sent successfully!",
-    "error": "There was an error sending the message"
+    "success": "Message sent! I'll reply soon.",
+    "error": "Something went wrong. Please try again."
   },
   "footer": {
-    "rights": "All rights reserved",
-    "sections": {
-      "about": "About",
-      "skill": "Skills",
-      "education": "Education",
-      "project": "Projects",
-      "contact": "Contact"
-    }
-  },
-  "theme": {
-    "purple": "Purple",
-    "green": "Green",
-    "terracotta": "Terracotta",
-    "ocean": "Ocean"
+    "tagline": "Software Engineer · Cloud · Integration · Architecture",
+    "copyright": "Built with modern web technologies.",
+    "rights": "All rights reserved"
   },
   "language": {
     "select": "Select language",
