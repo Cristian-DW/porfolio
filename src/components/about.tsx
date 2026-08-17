@@ -3,53 +3,100 @@ import { Link } from 'react-scroll';
 import ImgAbout from '../assets/about.webp';
 import { useTranslation } from 'react-i18next';
 
-/**
- * Props for the About component.
- */
-interface AboutProps {
-  selectedColor: string;
-}
+const specialtyBadges = [
+  { key: 'badge_software', accent: false },
+  { key: 'badge_cloud', accent: false },
+  { key: 'badge_integration', accent: false },
+  { key: 'badge_sap', accent: true },
+  { key: 'badge_architecture', accent: false },
+];
 
 /**
- * About component.
- * This component renders information about Cristian Castro with an animated background that changes based on the selected color.
- *
- * @param {string} selectedColor - The background color class passed from the parent component.
+ * About component — v3
+ * Professional identity: Software Engineer evolving toward Solution Architecture.
  */
-const About: React.FC<AboutProps> = ({ selectedColor }) => {
+const About: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div
+    <section
       id="about"
-      className="w-full min-h-screen flex items-center justify-center py-12 md:py-16 px-8 md:px-20 2xl:px-40 bg-fondo"
+      className="w-full min-h-screen flex items-center justify-center py-20 md:py-32 px-6 md:px-12 bg-surface-mid relative overflow-hidden"
     >
-      <div className="md:grid grid-cols-5 gap-8 md:gap-14 w-full max-w-screen-2xl">
-        <div className="md:col-span-2 md:block xxl:flex justify-center">
-          <div className='relative w-[280px] h-[360px] mb-[30px] 2xl:pb-0 2xl:w-[420px] 2xl:h-[540px] bg-black'>
-            <div
-              className={`absolute w-full h-full bottom-4 md:bottom-8 ${selectedColor} -right-6 md:-right-10 m-0 p-0 transition-colors duration-300`}
-            >
-              <img src={ImgAbout} alt='Cristian Castro' className="w-full h-full object-cover" loading="lazy" />
+      {/* Decorative blobs */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-cyan/5 rounded-full blur-[100px] pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto w-full relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 items-center">
+
+          {/* Photo */}
+          <div className="md:col-span-2 flex justify-center md:justify-start">
+            <div className="relative w-[260px] h-[340px] md:w-[320px] md:h-[420px] flex-shrink-0">
+              {/* Accent box behind */}
+              <div className="absolute w-full h-full bottom-5 -right-5 bg-brand/15 border border-brand/20 rounded-xl" />
+              {/* Photo */}
+              <img
+                src={ImgAbout}
+                alt="Cristian Castro"
+                className="absolute z-10 w-full h-full object-cover rounded-xl border border-white/10 shadow-2xl"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="md:col-span-3 flex flex-col justify-center">
+            <span className="section-eyebrow animate-fade-up">{t('about.eyebrow')}</span>
+
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-space tracking-tight mb-6 text-white leading-tight animate-fade-up">
+              {t('about.headline_line1')}{' '}
+              <span className="text-brand">{t('about.headline_line2')}</span>
+            </h2>
+
+            {/* Specialty badges */}
+            <div className="flex flex-wrap gap-2 mb-8 animate-fade-up">
+              {specialtyBadges.map((b) => (
+                <span
+                  key={b.key}
+                  className={`tech-badge ${b.accent ? 'text-cyan border-cyan/20' : ''}`}
+                >
+                  {t(`about.${b.key}`)}
+                </span>
+              ))}
+            </div>
+
+            {/* Description paragraphs */}
+            <div className="space-y-4 mb-8 animate-fade-up">
+              <p className="text-sm md:text-base text-muted leading-relaxed">
+                {t('about.para1')}
+              </p>
+              <p className="text-sm md:text-base text-muted leading-relaxed">
+                {t('about.para2')}
+              </p>
+              <p className="text-sm md:text-base text-muted leading-relaxed">
+                {t('about.para3')}
+              </p>
+            </div>
+
+            {/* CTA */}
+            <div className="flex gap-3 flex-wrap animate-fade-up">
+              <Link to="contact" smooth={true} duration={900}>
+                <button className="h-11 px-7 rounded-full bg-brand text-white font-bold uppercase tracking-wider text-xs transition-all hover:bg-brand-light hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,112,243,0.2)]">
+                  {t('about.cta_contact')}
+                </button>
+              </Link>
+              <Link to="project" smooth={true} duration={900}>
+                <button className="h-11 px-7 rounded-full bg-surface-card border border-white/10 text-white font-bold uppercase tracking-wider text-xs transition-all hover:border-brand hover:scale-105 active:scale-95">
+                  {t('about.cta_projects')}
+                </button>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="md:col-span-3 flex flex-col justify-center">
-          <h4 className="text-base md:text-lg 2xl:text-xl font-black uppercase tracking-tighter mb-3 text-white">{t('about.title')}</h4>
-          <p className="text-sm md:text-base font-medium 2xl:text-lg text-gray-400 leading-relaxed max-w-2xl">
-            {t('about.description')}
-          </p>
-          <Link to="contact" smooth={true} duration={900}>
-            <button className="button mt-8 md:mt-10 w-44 md:w-48 hover:text-fondo transition-all duration-300 transform hover:scale-105 active:scale-95">
-              <span className="relative z-10 text-xs md:text-sm font-black uppercase tracking-widest">
-                {t('nav.contact')}
-              </span>
-            </button>
-          </Link>
-        </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default About;
