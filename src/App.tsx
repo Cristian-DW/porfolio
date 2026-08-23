@@ -4,12 +4,12 @@ import Nav from './components/nav';
 import Social from './components/social';
 import About from './components/about';
 import Skills from './components/skills';
-import Project from './components/project';
+import EngineeringInPractice from './components/EngineeringInPractice';
+import ProfessionalWork from './components/ProfessionalWork';
 import DeltuxArchitecture from './components/DeltuxArchitecture';
 import EngineeringChallenges from './components/EngineeringChallenges';
 import ArchitectureMindset from './components/ArchitectureMindset';
 import Certifications from './components/Certifications';
-import AISection from './components/AISection';
 import CareerDirection from './components/CareerDirection';
 import ContactForm from './components/contact';
 import Footer from './components/footer';
@@ -60,28 +60,28 @@ function App() {
           {/* 1. About */}
           <About />
 
-          {/* 2. Core Capabilities */}
+          {/* 2. Professional Capabilities */}
           <Skills />
 
-          {/* 3. Featured Projects */}
-          <Project />
+          {/* 3. Engineering in Practice */}
+          <EngineeringInPractice />
 
-          {/* 4. Project Architecture */}
+          {/* 4. Professional Work */}
+          <ProfessionalWork />
+
+          {/* 5. Architecture Evidence — Deltux */}
           <DeltuxArchitecture />
 
-          {/* 5. Engineering Challenges */}
+          {/* 6. Engineering Challenges */}
           <EngineeringChallenges />
 
-          {/* 6. Architecture Mindset */}
+          {/* 7. Architecture Mindset */}
           <ArchitectureMindset />
 
-          {/* 7. Certifications */}
+          {/* 8. Certifications */}
           <Certifications />
 
-          {/* 8. AI & Emerging Technologies */}
-          <AISection />
-
-          {/* 9. Career & Professional Growth */}
+          {/* 9. Career & Growth */}
           <CareerDirection />
 
           {/* 10. Contact */}
