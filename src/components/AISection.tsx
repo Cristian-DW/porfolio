@@ -2,12 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 const aiTechnologies = [
-  'Generative AI',
-  'LLMs',
-  'AI APIs',
-  'AI-assisted Development',
-  'Intelligent Applications',
-  'Prompt Engineering',
+  'Generative AI', 'LLMs', 'AI APIs',
+  'AI-assisted Development', 'Intelligent Applications', 'Prompt Engineering',
 ];
 
 const AISection: React.FC = () => {
@@ -15,13 +11,12 @@ const AISection: React.FC = () => {
 
   return (
     <section id="ai" className="py-20 md:py-28 bg-surface relative overflow-hidden">
-      {/* Subtle gradient accent */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(0,112,243,0.04)_0%,_transparent_70%)] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
 
-          {/* Left: Visual */}
+          {/* Visual */}
           <div className="flex justify-center md:justify-start animate-fade-up">
             <div className="relative w-56 h-56 md:w-64 md:h-64 flex-shrink-0">
               <div className="absolute inset-0 rounded-full border border-brand/15 animate-pulse" />
@@ -38,10 +33,10 @@ const AISection: React.FC = () => {
             </div>
           </div>
 
-          {/* Right: Content */}
+          {/* Content */}
           <div className="animate-fade-up" style={{ animationDelay: '100ms' }}>
             <span className="section-eyebrow">{t('ai.eyebrow')}</span>
-            <h2 className="text-3xl md:text-4xl font-bold font-space text-white mb-4 tracking-tight leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold font-space text-primary mb-4 tracking-tight leading-tight">
               {t('ai.title')}
             </h2>
             <p className="text-muted text-sm md:text-base leading-relaxed mb-6">
@@ -49,23 +44,18 @@ const AISection: React.FC = () => {
             </p>
 
             {/* Note */}
-            <div className="flex items-start gap-3 p-4 rounded-xl border border-white/8 bg-white/3 mb-6">
+            <div className="flex items-start gap-3 p-4 rounded-xl border border-line/8 bg-surface-mid mb-6">
               <svg className="w-4 h-4 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="12" y1="8" x2="12" y2="12"/>
-                <line x1="12" y1="16" x2="12.01" y2="16"/>
+                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
               </svg>
-              <p className="text-xs text-muted leading-relaxed">
-                {t('ai.note')}
-              </p>
+              <p className="text-xs text-muted leading-relaxed">{t('ai.note')}</p>
             </div>
 
-            {/* Tech pills */}
             <div className="flex flex-wrap gap-2">
               {aiTechnologies.map((tech) => (
                 <span
                   key={tech}
-                  className="px-3 py-1.5 rounded-full border border-brand/20 bg-brand/8 text-xs text-brand/90 font-medium hover:border-brand/40 transition-colors"
+                  className="px-3 py-1.5 rounded-full border border-brand/20 bg-brand/8 text-xs text-brand font-medium hover:border-brand/40 transition-colors"
                 >
                   {tech}
                 </span>
