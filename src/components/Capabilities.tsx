@@ -40,7 +40,7 @@ const C: Record<CapColor, {
   num: string;     // badge: bg + border + text
   card: string;    // card active border
   ring: string;    // active ring
-  hover: string;   // hover border
+  hover: string;   // hover border + shadow
   skill: string;   // skill chip
   dot: string;     // bullet dot
   text: string;    // accent text
@@ -48,32 +48,44 @@ const C: Record<CapColor, {
   panelBd: string; // modal section border
   chip: string;    // modal chip
   btn: string;     // modal link button
+  accent: string;  // top accent bar gradient
+  iconBg: string;  // icon container bg
+  diagBg: string;  // diagram area bg
+  ctaHover: string; // CTA hover state
 }> = {
   brand: {
-    num:     'bg-brand/8 border-brand/20 text-brand',
-    card:    'border-brand/28',
-    ring:    'shadow-[0_0_0_2px_rgba(var(--color-brand),0.20)]',
-    hover:   'hover:border-brand/22 hover:shadow-[0_4px_20px_-8px_rgba(var(--color-brand),0.18)]',
-    skill:   'bg-brand/6 border-brand/14 text-brand',
-    dot:     'bg-brand/55',
-    text:    'text-brand',
-    panelBg: 'bg-brand/4',
-    panelBd: 'border-brand/12',
-    chip:    'bg-brand/8 border-brand/18 text-brand',
-    btn:     'border-brand/25 text-brand hover:bg-brand/8',
+    num:      'bg-brand/12 border-brand/25 text-brand',
+    card:     'border-brand/35',
+    ring:     'shadow-[0_0_0_2px_rgba(var(--color-brand),0.22)]',
+    hover:    'hover:border-brand/30 hover:shadow-[0_8px_32px_-10px_rgba(var(--color-brand),0.22)] hover:-translate-y-1',
+    skill:    'bg-brand/8 border-brand/18 text-brand',
+    dot:      'bg-brand/55',
+    text:     'text-brand',
+    panelBg:  'bg-brand/4',
+    panelBd:  'border-brand/12',
+    chip:     'bg-brand/8 border-brand/18 text-brand',
+    btn:      'border-brand/25 text-brand hover:bg-brand/8',
+    accent:   'from-brand/60 via-brand/40 to-transparent',
+    iconBg:   'bg-brand/10 group-hover:bg-brand/16',
+    diagBg:   'bg-gradient-to-br from-brand/6 to-transparent border-brand/10',
+    ctaHover: 'hover:border-brand/30 hover:text-brand hover:bg-brand/5',
   },
   cyan: {
-    num:     'bg-cyan/8 border-cyan/20 text-cyan',
-    card:    'border-cyan/26',
-    ring:    'shadow-[0_0_0_2px_rgba(var(--color-cyan),0.18)]',
-    hover:   'hover:border-cyan/20 hover:shadow-[0_4px_20px_-8px_rgba(var(--color-cyan),0.16)]',
-    skill:   'bg-cyan/6 border-cyan/14 text-cyan',
-    dot:     'bg-cyan/50',
-    text:    'text-cyan',
-    panelBg: 'bg-cyan/4',
-    panelBd: 'border-cyan/10',
-    chip:    'bg-cyan/6 border-cyan/16 text-cyan',
-    btn:     'border-cyan/25 text-cyan hover:bg-cyan/8',
+    num:      'bg-cyan/12 border-cyan/25 text-cyan',
+    card:     'border-cyan/32',
+    ring:     'shadow-[0_0_0_2px_rgba(var(--color-cyan),0.20)]',
+    hover:    'hover:border-cyan/28 hover:shadow-[0_8px_32px_-10px_rgba(var(--color-cyan),0.20)] hover:-translate-y-1',
+    skill:    'bg-cyan/8 border-cyan/16 text-cyan',
+    dot:      'bg-cyan/50',
+    text:     'text-cyan',
+    panelBg:  'bg-cyan/4',
+    panelBd:  'border-cyan/10',
+    chip:     'bg-cyan/6 border-cyan/16 text-cyan',
+    btn:      'border-cyan/25 text-cyan hover:bg-cyan/8',
+    accent:   'from-cyan/55 via-cyan/35 to-transparent',
+    iconBg:   'bg-cyan/10 group-hover:bg-cyan/16',
+    diagBg:   'bg-gradient-to-br from-cyan/6 to-transparent border-cyan/10',
+    ctaHover: 'hover:border-cyan/28 hover:text-cyan hover:bg-cyan/5',
   },
 };
 
@@ -447,63 +459,83 @@ const Capabilities: React.FC = () => {
                 key={cap.key}
                 role="listitem"
                 className={`
-                  glass-panel rounded-2xl border overflow-hidden
-                  transition-all duration-250 border-line/8
+                  group glass-panel rounded-2xl border overflow-hidden
+                  transition-all duration-300 border-line/10
                   ${c.hover}
                 `}
               >
+                {/* ── Top color accent bar ─────────────────────────────── */}
+                <div className={`h-[3px] w-full bg-gradient-to-r ${c.accent}`} aria-hidden="true"/>
+
                 <div className="p-5 md:p-6 flex flex-col h-full">
-                  {/* Number badge + icon */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span className={`w-8 h-8 rounded-xl flex items-center justify-center text-xs font-black font-mono border ${c.num}`}>
+                  {/* ── Header: number badge + icon ──────────────────────── */}
+                  <div className="flex items-center justify-between mb-5">
+                    <span className={`
+                      w-9 h-9 rounded-xl flex items-center justify-center
+                      text-[11px] font-black font-mono border
+                      transition-all duration-300
+                      ${c.num}
+                    `}>
                       {cap.num}
                     </span>
-                    <span className={`opacity-45 ${c.text} transition-opacity duration-200 group-hover:opacity-80`}>
-                      <CapIcon k={cap.key}/>
+                    <span className={`
+                      w-10 h-10 rounded-xl flex items-center justify-center
+                      transition-all duration-300
+                      group-hover:scale-110 group-hover:rotate-3
+                      ${c.iconBg} ${c.text}
+                    `}>
+                      <CapIcon k={cap.key} className="w-5 h-5"/>
                     </span>
                   </div>
 
-                  {/* Title */}
-                  <h3 className={`text-base font-bold font-space tracking-tight mb-2 ${c.text}`}>
+                  {/* ── Title ───────────────────────────────────────────── */}
+                  <h3 className={`text-base md:text-[17px] font-bold font-space tracking-tight mb-2 ${c.text}`}>
                     {t(`capabilities.${cap.key}_title`)}
                   </h3>
 
-                  {/* Description */}
+                  {/* ── Description ─────────────────────────────────────── */}
                   <p className="text-sm text-muted leading-relaxed mb-4">
                     {t(`capabilities.${cap.key}_desc`)}
                   </p>
 
-                  {/* Diagram */}
-                  <div className="mb-4 px-2 py-3 rounded-xl bg-line/4 border border-line/6">
+                  {/* ── Diagram ─────────────────────────────────────────── */}
+                  <div className={`mb-4 px-3 py-4 rounded-xl border transition-colors duration-300 ${c.diagBg}`}>
                     <Diagram k={cap.key} color={cap.color}/>
                   </div>
 
-                  {/* Skills */}
+                  {/* ── Skills ──────────────────────────────────────────── */}
                   <div className="flex flex-wrap gap-1.5 mb-5">
                     {cap.skills.map(s => (
-                      <span key={s} className={`px-2 py-0.5 rounded-md text-[10px] font-mono font-medium border ${c.skill}`}>{s}</span>
+                      <span
+                        key={s}
+                        className={`
+                          px-2.5 py-1 rounded-lg text-[10px] font-mono font-medium
+                          border transition-all duration-200
+                          ${c.skill}
+                        `}
+                      >{s}</span>
                     ))}
                   </div>
 
-                  {/*
-                    CTA — opens Portal modal, card height NEVER changes.
-                    ref callback captures the button for focus restoration.
-                  */}
+                  {/* ── CTA — opens Portal modal ─────────────────────────── */}
                   <button
                     ref={el => { if (el) triggerRefs.current[cap.key] = el; }}
                     onClick={e => openModal(cap.key, e.currentTarget)}
                     aria-haspopup="dialog"
                     className={`
                       mt-auto w-full flex items-center justify-between
-                      py-2 px-3 rounded-xl border
+                      py-2.5 px-4 rounded-xl border
                       text-xs font-semibold text-muted
-                      border-line/8 hover:border-line/20 hover:text-primary hover:bg-line/4
-                      transition-all duration-200
+                      border-line/10 transition-all duration-200
                       focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand
+                      ${c.ctaHover}
                     `}
                   >
                     <span>{t('capabilities.explore')}</span>
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <svg
+                      className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-y-0.5"
+                      fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"
+                    >
                       <polyline points="6 9 12 15 18 9"/>
                     </svg>
                   </button>
