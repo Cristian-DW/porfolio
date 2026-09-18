@@ -1,24 +1,37 @@
-# Porfolio web (Cristian Castro) 🛸 
-¡Bienvenido a mi universo creativo en el desarrollo frontend! Aquí es donde la pasión y la innovación se unen para dar vida a experiencias web emocionantes y cautivadoras. ¡Adelante, explora y descubre el viaje visual que te espera! 🌟
+# Cristian Castro Dev — Portfolio
+
+> Senior Software Engineer & Solution Architect — SAP BTP, Integration Suite, Cloud Architecture
+
+Personal portfolio built with React, TypeScript, and Tailwind CSS. Designed to communicate engineering depth, architectural thinking, and professional trajectory through a premium, editorial aesthetic.
+
+[**cristiancastro.dev**](https://cristiancastro.dev)
+
+---
+
+## Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | React 18 + TypeScript |
+| Build | Vite 4 |
+| Styling | Tailwind CSS 3 + Vanilla CSS design tokens |
+| i18n | i18next + react-i18next (ES / EN) |
+| Email | EmailJS |
+| Animations | tailwindcss-animated + CSS keyframes + requestAnimationFrame |
+| Fonts | Space Grotesk · Inter · JetBrains Mono |
 
 
-## Capturas de Pantalla
-<img align="center" width="600" src="https://github.com/Cristian-DW/layout/blob/main/porfolio-ones.JPG" />
-<img align="center" width="600" src="https://github.com/Cristian-DW/layout/blob/main/porfolio-one.JPG" />
-<img align="center" width="600" src="https://github.com/Cristian-DW/layout/blob/main/Poroflio-two.JPG" />
-
-## Tecnologías Utilizadas
-
-- React.js: La columna vertebral dinámica de mi trabajo, permitiéndome crear interacciones fluidas y experiencias envolventes.
-- Tailwind CSS: Herramienta imprescindible para dar estilo y diseño ágil a mis proyectos, permitiendo una personalización sin límites.
-
-## Visita y contáctame  
+### Responsive
+- Mobile-first Tailwind breakpoints (`sm`, `md`, `lg`, `xl`, `2xl`)
+- Background canvas disabled on touch/small devices
+- Scroll indicator hidden below `md`
+- Social links visible only on mobile/tablet (`< lg`)
+- Fluid typography and layout across all viewport sizes
 
 
-[¡Haz clic aquí para ver mi portfolio en línea!](https://cristiancastro.netlify.app/) y descubre un mundo donde la creatividad y la tecnología se fusionan para dar vida a ideas innovadoras. ¿Tienes preguntas, ideas o colaboraciones en mente? ¡No dudes en contactarme! Estoy emocionado de conectar contigo y explorar nuevas oportunidades juntos.
+### Internationalization
+- Full ES/EN coverage via JSON locale files
+- Language selector in the navigation bar
+- All section content, labels, and CTAs are translatable
 
-¡Únete a mí en este emocionante viaje donde cada línea de código es una pincelada de expresión y cada diseño es una obra de arte digital! ¡Nos vemos en la web! 🤩
-
-
-
-
+**Built with precision.** Software Engineering · Cloud Integration · Architecture

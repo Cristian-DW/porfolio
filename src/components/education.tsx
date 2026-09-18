@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { ImageWithPopover } from "./extras/Popover";
 import ImgMicrosoft from "../assets/microsoft.png";
